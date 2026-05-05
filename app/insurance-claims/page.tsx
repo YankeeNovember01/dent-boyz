@@ -3,6 +3,7 @@ import Link from 'next/link';
 import CTABlock from '@/components/CTABlock';
 import LeadForm from '@/components/LeadForm';
 import SchemaMarkup from '@/components/SchemaMarkup';
+import CarrierGrid from '@/components/CarrierGrid';
 
 export const metadata: Metadata = {
   title: 'Auto Hail Insurance Claims Texas — Step-by-Step Guide | Dent Boyz',
@@ -220,13 +221,7 @@ export default function InsuranceClaimsPage() {
           {/* Carrier grid */}
           <div className="mt-10">
             <h3 className="font-extrabold text-dark-text mb-4 uppercase tracking-wide text-sm">We Work With Every Major Texas Insurer</h3>
-            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
-              {insuranceCarriers.map((carrier) => (
-                <div key={carrier} className="bg-navy text-white text-center py-4 px-3">
-                  <span className="font-bold text-xs uppercase tracking-wide">{carrier}</span>
-                </div>
-              ))}
-            </div>
+            <CarrierGrid />
             <p className="text-gray-500 text-xs mt-3">Don&apos;t see your carrier? We work with all Texas comprehensive insurers. <a href="tel:2145550100" className="text-gold hover:underline">Call us.</a></p>
           </div>
         </div>

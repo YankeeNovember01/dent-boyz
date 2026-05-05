@@ -5,6 +5,7 @@ import CityGrid from '@/components/CityGrid';
 import CTABlock from '@/components/CTABlock';
 import LeadForm from '@/components/LeadForm';
 import PhotoWithMeta from '@/components/PhotoWithMeta';
+import CarrierGrid from '@/components/CarrierGrid';
 
 export const metadata: Metadata = {
   title: 'North Dallas Hail Damage Repair — Factory Paint. Zero Hassle.',
@@ -335,13 +336,7 @@ export default function HomePage() {
               We Work Directly With Every Major Texas Insurer
             </h2>
           </div>
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 mb-8">
-            {carriers.map((carrier) => (
-              <div key={carrier} className="border border-gold/30 bg-navy-dark text-center py-5 px-4">
-                <span className="text-white font-bold text-sm uppercase tracking-wide">{carrier}</span>
-              </div>
-            ))}
-          </div>
+          <CarrierGrid />
           <p className="text-center text-gray-400 text-sm">
             Don&apos;t see your carrier? We work with all insurers that cover comprehensive/collision in Texas.{' '}
             <a href="tel:2145550100" className="text-gold hover:underline font-semibold">Call us.</a>
