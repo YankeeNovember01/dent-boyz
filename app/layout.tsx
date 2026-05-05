@@ -35,11 +35,17 @@ export const metadata: Metadata = {
     siteName: 'Dent Boyz',
     title: 'Dent Boyz — North Dallas Hail Damage Repair',
     description: 'Expert auto hail damage repair in North Dallas. Free inspection, insurance handled, factory paint preserved.',
+    images: [{ url: '/images/og-image.png', width: 1024, height: 1024, alt: 'Dent Boyz PDR Logo' }],
   },
   twitter: {
     card: 'summary_large_image',
     title: 'Dent Boyz — North Dallas Hail Damage Repair',
     description: 'Expert auto hail damage repair in North Dallas.',
+    images: ['/images/og-image.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
+    apple: '/apple-touch-icon.png',
   },
 };
 

@@ -2,6 +2,7 @@
 
 import { useState } from 'react';
 import Link from 'next/link';
+import Image from 'next/image';
 
 const serviceLinks = [
   { label: 'Hail Damage Repair', href: '/hail-damage-repair' },
@@ -23,8 +24,15 @@ export default function Nav() {
     <header className="bg-navy sticky top-0 z-50 shadow-lg">
       <div className="container-xl flex items-center justify-between py-4">
         {/* Logo */}
-        <Link href="/" className="flex items-center gap-2 text-white font-extrabold text-xl tracking-tight hover:text-gold transition-colors">
-          DENT BOYZ
+        <Link href="/" className="flex items-center hover:opacity-90 transition-opacity">
+          <Image
+            src="/images/logo.png"
+            alt="Dent Boyz PDR — North Dallas Hail Damage Repair"
+            width={120}
+            height={120}
+            className="h-14 w-auto"
+            priority
+          />
         </Link>
 
         {/* Desktop Nav */}

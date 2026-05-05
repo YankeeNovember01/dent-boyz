@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 const serviceLinks = [
   { label: 'Auto Hail Damage Repair', href: '/hail-damage-repair' },
@@ -26,7 +27,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="text-white font-extrabold text-xl mb-2">DENT BOYZ</div>
+            <Image src="/images/logo.png" alt="Dent Boyz PDR" width={100} height={100} className="h-16 w-auto mb-2 brightness-0 invert" />
             <p className="text-gray-400 text-sm mb-4">North Dallas&apos; Trusted Hail Damage Repair Experts</p>
             <address className="not-italic text-sm text-gray-400 space-y-1">
               <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
