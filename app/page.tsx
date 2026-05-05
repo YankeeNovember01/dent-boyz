@@ -311,7 +311,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-2 gap-12 items-center">
             <div className="overflow-hidden">
               <PhotoWithMeta
-                src="/images/hail/hail-damage-hood.jpg"
+                src="/images/mercedes-amg-pdr.png"
                 alt="Auto hail damage repair in North Dallas, TX — technician performing PDR on vehicle roof | Dent Boyz"
                 priority
                 city="North Dallas"
@@ -395,7 +395,7 @@ export default function HomePage() {
             </div>
             <div className="overflow-hidden">
               <PhotoWithMeta
-                src="/images/pdr/technician-working.jpg"
+                src="/images/escalade-v-pdr.png"
                 alt="PDR paintless dent repair for newer vehicles in North Dallas, TX — 2022 Tesla Model 3 hail damage restoration | Dent Boyz"
                 city="North Dallas"
                 width={800}
