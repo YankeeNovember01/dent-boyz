@@ -1,22 +1,5 @@
 import Link from 'next/link';
-
-const CITIES = [
-  { name: 'Frisco', slug: 'frisco-tx' },
-  { name: 'McKinney', slug: 'mckinney-tx' },
-  { name: 'Plano', slug: 'plano-tx' },
-  { name: 'Allen', slug: 'allen-tx' },
-  { name: 'Prosper', slug: 'prosper-tx' },
-  { name: 'Celina', slug: 'celina-tx' },
-  { name: 'The Colony', slug: 'the-colony-tx' },
-  { name: 'Little Elm', slug: 'little-elm-tx' },
-  { name: 'Aubrey', slug: 'aubrey-tx' },
-  { name: 'Richardson', slug: 'richardson-tx' },
-  { name: 'Garland', slug: 'garland-tx' },
-  { name: 'Carrollton', slug: 'carrollton-tx' },
-  { name: 'Addison', slug: 'addison-tx' },
-  { name: 'Denton', slug: 'denton-tx' },
-  { name: 'Southlake', slug: 'southlake-tx' },
-];
+import { CITIES } from '@/lib/cities';
 
 export default function CityGrid() {
   return (
