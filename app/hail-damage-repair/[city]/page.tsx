@@ -162,7 +162,7 @@ export default function CityPage({ params }: Props) {
             </div>
             <div className="rounded-xl overflow-hidden shadow-md">
               <PhotoWithMeta
-                src="https://picsum.photos/600/400?random=10"
+                src="/images/hail/hail-storm-car.jpg"
                 alt={`Auto hail damage repair in ${city.name}, TX — vehicle with hail dents being restored by PDR technician | Dent Boyz`}
                 city={city.name}
                 width={600}

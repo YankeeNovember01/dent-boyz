@@ -2,14 +2,8 @@
 
 const nextConfig = {
   images: {
-    remotePatterns: [
-      {
-        protocol: 'https',
-        hostname: 'picsum.photos',
-        port: '',
-        pathname: '/**',
-      },
-    ],
+    // Local images from /public/images/ work without remotePatterns
+    // Add remote hosts here only if needed for external image sources
   },
 };
 
