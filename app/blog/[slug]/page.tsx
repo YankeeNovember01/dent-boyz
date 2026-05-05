@@ -554,7 +554,7 @@ function Post3() {
         ))}
       </ul>
       <p className={pClass}>
-        The inspection is free. It takes 20–30 minutes. We come to you if needed.
+        The inspection is free. It takes 20–30 minutes. We can come to your location for the inspection.
       </p>
 
       <h2 className={h2Class}>Step 6 — Decide Whether to File a Claim</h2>

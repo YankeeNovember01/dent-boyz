@@ -16,7 +16,7 @@ const insuranceSteps = [
   {
     step: '1',
     title: 'Free Inspection',
-    desc: 'We come to you or you come to us. Our technician documents every dent, every panel. You get a detailed damage report — at no cost, no obligation.',
+    desc: 'We perform a free on-site inspection — at your home, office, or our shop. Our technician documents every dent on every panel with photos and measurements. No cost, no obligation.',
   },
   {
     step: '2',
@@ -53,7 +53,7 @@ const comparisonRows = [
   { feature: 'Supplemental Claims Filed', dentBoyz: 'YES', bodyShop: 'No', pdrShops: 'No' },
   { feature: 'Lifetime Warranty', dentBoyz: 'YES', bodyShop: 'Varies', pdrShops: 'Rarely' },
   { feature: '$0 Out of Pocket Program', dentBoyz: 'YES', bodyShop: 'No', pdrShops: 'No' },
-  { feature: 'Mobile Service (We Come to You)', dentBoyz: 'YES', bodyShop: 'No', pdrShops: 'Sometimes' },
+  { feature: 'Free On-Site Inspection', dentBoyz: 'YES', bodyShop: 'No', pdrShops: 'Sometimes' },
   { feature: '1-5 Day Turnaround', dentBoyz: 'YES', bodyShop: '2-4 Weeks', pdrShops: 'YES' },
   { feature: 'Luxury Vehicle Specialists', dentBoyz: 'YES', bodyShop: 'Yes', pdrShops: 'Sometimes' },
 ];
@@ -402,7 +402,7 @@ export default function HomePage() {
             </h2>
             <p className="text-gray-600 max-w-2xl mx-auto">
               We serve 35+ cities across Collin County, Denton County, and the North Dallas metro.
-              Mobile service available — we come to your home or office.
+              Free on-site inspections available — we come to you.
             </p>
           </div>
           <CityGrid />

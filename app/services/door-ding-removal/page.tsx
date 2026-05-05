@@ -241,7 +241,7 @@ export default function DoorDingRemovalPage() {
         <div className="container-xl max-w-4xl">
           <h2 className="text-3xl font-extrabold text-dark-text mb-4">Serving All of North Dallas</h2>
           <p className="text-gray-600 mb-8">
-            We serve the entire North Dallas area. Mobile service available — we can come to your
+            We serve the entire North Dallas area. Free on-site inspections available — we can come to your
             home or office in most locations.
           </p>
           <div className="grid grid-cols-2 sm:grid-cols-4 gap-3">

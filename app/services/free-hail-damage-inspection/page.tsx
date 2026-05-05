@@ -20,7 +20,7 @@ const faqItems = [
   },
   {
     question: 'Do you come to me, or do I bring the car to you?',
-    answer: 'Both options are available. We can come to your home, office, or another convenient location for mobile inspections across most of North Dallas. Or you can bring the vehicle to us. Let us know your preference when you schedule.',
+    answer: 'Both options are available. We can come to your home or office for the inspection across most of North Dallas, or you can bring your vehicle to us. Once the inspection is complete, repairs are performed at our shop. Let us know your preference when you schedule.',
   },
 ];
 
@@ -242,7 +242,7 @@ export default function FreeHailDamageInspectionPage() {
               {
                 icon: '',
                 title: 'Mobile Inspection',
-                desc: 'We come to your home or office across most of North Dallas. No drop-off required.',
+                desc: 'We come to your home or office across most of North Dallas for the inspection. Repairs are completed at our shop with professional PDR equipment.',
                 action: null,
               },
             ].map((item) => (

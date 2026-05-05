@@ -25,9 +25,9 @@ const differentiators = [
     body: 'New BMWs, Teslas, Range Rovers, Porsches — we understand the stakes of preserving factory paint on a $60K+ vehicle. We treat them accordingly.',
   },
   {
-    title: 'Mobile Service',
+    title: 'Free On-Site Inspections',
     icon: '',
-    body: 'We come to you. Home, office, wherever works. North Dallas commuters shouldn\'t have to take a day off for a dent.',
+    body: 'We come to you for inspections — home, office, wherever is convenient. Repairs are completed at our shop with precision PDR equipment and specialized lighting.',
   },
 ];
 
@@ -224,7 +224,7 @@ export default function AboutPage() {
           </h2>
           <p className="text-gray-600 text-lg mb-8">
             We serve all of North Dallas and the surrounding DFW suburbs. Mobile service
-            available — we come to you.
+            available — we come to you for inspections.
           </p>
           <div className="flex flex-wrap gap-3 mb-8">
             {serviceAreaCities.map((city) => (

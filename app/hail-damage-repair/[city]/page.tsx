@@ -29,11 +29,11 @@ function buildCityFAQ(city: ReturnType<typeof getCityBySlug>) {
   return [
     {
       question: `How quickly can Dent Boyz respond to hail damage in ${city.name}, TX?`,
-      answer: `We typically schedule free inspections in ${city.name} within 1–2 business days of your call. Once your vehicle is in our shop and the insurance claim gets approval, we immediately begin the repair process. Most repairs take 1–3 business days. Keep in mind the full process from filing your claim to repair start typically takes 1–2 weeks at most. We also offer mobile service — our technicians can come to your home in ${city.neighborhoods} or your office for the inspection.`,
+      answer: `We typically schedule free inspections in ${city.name} within 1–2 business days of your call — our technicians come to your home or office for the inspection. Once your vehicle is in our shop and the insurance claim gets approval, we immediately begin the repair process. Most repairs take 1–3 business days. Keep in mind the full process from filing your claim to repair start typically takes 1–2 weeks at most.`,
     },
     {
-      question: `Does Dent Boyz offer mobile PDR service in ${city.name}?`,
-      answer: `Yes. We offer mobile paintless dent repair service throughout ${city.name} and surrounding areas. Our technicians can come to your home, office, or any convenient location. This is especially popular with our ${city.name} customers who don't want to take time off work to drop off their vehicle.`,
+      question: `Does Dent Boyz come to ${city.name} for inspections?`,
+      answer: `Yes — we offer free on-site inspections throughout ${city.name}. Our technicians come to your home or office to assess your vehicle at no charge. Repairs are then completed at our shop using professional PDR equipment and specialized lighting to ensure a factory-quality result.`,
     },
     {
       question: `Which insurance companies do you work with in ${city.name}, TX?`,
@@ -213,8 +213,8 @@ export default function CityPage({ params }: Props) {
             {[
               {
                 icon: '',
-                title: `Mobile Service Throughout ${city.name}`,
-                desc: `We come to your home in ${city.neighborhoods} or your office. No need to disrupt your schedule to drop off your car. Our mobile PDR technicians serve all of ${city.name} and surrounding areas.`,
+                title: `Free On-Site Inspections in ${city.name}`,
+                desc: `We come to your home in ${city.neighborhoods} or your office for a free inspection. Once we assess your vehicle, repairs are completed at our shop with precision PDR tools and specialized lighting.`,
               },
               {
                 icon: '',
@@ -265,7 +265,7 @@ export default function CityPage({ params }: Props) {
               {
                 step: '01',
                 title: 'Free Mobile Inspection',
-                desc: `We come to you anywhere in ${city.name} — home, office, or dealership. Our inspection takes 30–45 minutes, covers every panel, and produces a complete damage report with photos and dent counts.`,
+                desc: `We come to your home or office in ${city.name} for a free inspection. Our technician covers every panel and produces a complete damage report with photos and dent counts — no obligation.`,
               },
               {
                 step: '02',
