@@ -114,19 +114,31 @@ export default function HomePage() {
           <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
           {/* Logo — slides in from right on load */}
           <div
-            className="order-first lg:order-last lg:ml-auto flex-shrink-0 animate-slide-in-right"
+            className="order-first lg:order-last lg:ml-auto flex-shrink-0"
             style={{
               animation: 'slideInRight 0.7s cubic-bezier(0.22,1,0.36,1) both',
             }}
           >
-            <Image
-              src="/images/logo.png"
-              alt="Dent Boyz PDR — North Dallas Hail Damage Repair"
-              width={340}
-              height={340}
-              className="w-48 md:w-64 lg:w-80 h-auto drop-shadow-2xl"
-              priority
-            />
+            <div style={{
+              position: 'relative',
+              display: 'inline-block',
+            }}>
+              <Image
+                src="/images/logo.png"
+                alt="Dent Boyz PDR — North Dallas Hail Damage Repair"
+                width={340}
+                height={340}
+                className="w-48 md:w-64 lg:w-80 h-auto"
+                priority
+              />
+              {/* Radial fade overlay — blends white box edges into navy */}
+              <div style={{
+                position: 'absolute',
+                inset: 0,
+                background: 'radial-gradient(ellipse at center, transparent 45%, #0A1628 80%)',
+                pointerEvents: 'none',
+              }} />
+            </div>
           </div>
           <div className="max-w-3xl">
             <div className="w-12 h-0.5 bg-gold mb-8"></div>
