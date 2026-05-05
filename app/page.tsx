@@ -124,8 +124,7 @@ export default function HomePage() {
               alt="Dent Boyz PDR — North Dallas Hail Damage Repair"
               width={340}
               height={340}
-              className="w-48 md:w-64 lg:w-80 h-auto"
-              style={{ mixBlendMode: 'luminosity' }}
+              className="w-48 md:w-64 lg:w-80 h-auto rounded-2xl"
               priority
             />
           </div>
