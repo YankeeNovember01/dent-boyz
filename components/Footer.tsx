@@ -1,90 +1,108 @@
-import Link from 'next/link';
-import Image from 'next/image';
+'use client'
+import Link from 'next/link'
+import Image from 'next/image'
+import { CITIES } from '@/lib/cities'
 
-const serviceLinks = [
-  { label: 'Auto Hail Damage Repair', href: '/hail-damage-repair' },
-  { label: 'Paintless Dent Repair', href: '/hail-damage-repair' },
-  { label: 'Door Ding Removal', href: '/hail-damage-repair' },
-  { label: 'Insurance Claims', href: '/insurance-claims' },
-  { label: 'Free Estimate', href: '/free-estimate' },
-];
+const services = [
+  { name: 'Hail Damage Repair', href: '/hail-damage-repair' },
+  { name: 'Paintless Dent Repair', href: '/paintless-dent-repair' },
+  { name: 'Door Ding Removal', href: '/services/door-ding-removal' },
+  { name: 'Large Dent Repair', href: '/services/large-dent-repair' },
+  { name: 'Bumper Repair', href: '/services/bumper-repair' },
+  { name: 'Lease Return PDR', href: '/services/lease-return-dent-repair' },
+  { name: 'Free Hail Inspection', href: '/services/free-hail-damage-inspection' },
+]
 
-const cityLinks = [
-  { label: 'Frisco, TX', href: '/hail-damage-repair/frisco-tx' },
-  { label: 'McKinney, TX', href: '/hail-damage-repair/mckinney-tx' },
-  { label: 'Plano, TX', href: '/hail-damage-repair/plano-tx' },
-  { label: 'Allen, TX', href: '/hail-damage-repair/allen-tx' },
-  { label: 'Prosper, TX', href: '/hail-damage-repair/prosper-tx' },
-  { label: 'Celina, TX', href: '/hail-damage-repair/celina-tx' },
-  { label: 'Denton, TX', href: '/hail-damage-repair/denton-tx' },
-  { label: 'Southlake, TX', href: '/hail-damage-repair/southlake-tx' },
-];
+// Show first 18 cities in footer, sorted alphabetically by name
+const footerCities = [...CITIES].sort((a, b) => a.name.localeCompare(b.name)).slice(0, 18)
 
 export default function Footer() {
   return (
-    <footer className="bg-navy text-gray-300">
-      <div className="container-xl py-12">
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
-          {/* Brand */}
+    <footer className="bg-[#0a1628] text-white">
+      <div className="max-w-7xl mx-auto px-4 py-16">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-12">
+
+          {/* Column 1: Brand */}
           <div>
-            <Image src="/images/logo.png" alt="Dent Boyz PDR" width={100} height={100} className="h-16 w-auto mb-2 brightness-0 invert" />
-            <p className="text-gray-400 text-sm mb-4">North Dallas&apos; Trusted Hail Damage Repair Experts</p>
-            <address className="not-italic text-sm text-gray-400 space-y-1">
-              <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">
-                <span itemProp="addressLocality">North Dallas</span>,{' '}
-                <span itemProp="addressRegion">TX</span>{' '}
-                <span itemProp="postalCode">75034</span>
-              </div>
-              <div>
-                <a href="tel:2145550100" className="text-electric-blue hover:text-gold transition-colors" itemProp="telephone">
-                  (214) 555-0100
-                </a>
-              </div>
-              <div>
-                <a href="mailto:info@dent-boyz.com" className="hover:text-gold transition-colors" itemProp="email">
-                  info@dent-boyz.com
-                </a>
-              </div>
-            </address>
+            <div className="mb-4">
+              <Link href="/">
+                <Image
+                  src="/images/logo.png"
+                  alt="Dent Boyz"
+                  width={160}
+                  height={48}
+                  className="h-12 w-auto"
+                  onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
+                />
+              </Link>
+            </div>
+            <p className="text-gray-400 text-sm leading-relaxed mb-4">
+              North Dallas&apos;s paintless dent repair specialists. Hail damage repair, insurance claim assistance, and PDR for all vehicle types.
+            </p>
+            <p className="text-[#c9a84c] font-bold text-lg">(214) 555-0100</p>
+            <p className="text-gray-400 text-sm">Free estimates — call or text</p>
           </div>
 
-          {/* Services */}
+          {/* Column 2: Services */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Services</h3>
+            <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Services</h3>
             <ul className="space-y-2">
-              {serviceLinks.map((link) => (
-                <li key={link.href + link.label}>
-                  <Link href={link.href} className="text-sm hover:text-gold transition-colors">
-                    {link.label}
+              {services.map(s => (
+                <li key={s.href}>
+                  <Link href={s.href} className="text-gray-400 hover:text-[#c9a84c] text-sm transition-colors">
+                    {s.name}
                   </Link>
                 </li>
               ))}
             </ul>
           </div>
 
-          {/* Cities */}
+          {/* Column 3: Cities We Serve */}
           <div>
-            <h3 className="text-white font-semibold mb-4 text-sm uppercase tracking-wider">Cities We Serve</h3>
-            <ul className="grid grid-cols-2 gap-2">
-              {cityLinks.map((link) => (
-                <li key={link.href}>
-                  <Link href={link.href} className="text-sm hover:text-gold transition-colors">
-                    {link.label}
+            <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Cities We Serve</h3>
+            <ul className="space-y-1.5 columns-2">
+              {footerCities.map(city => (
+                <li key={city.slug}>
+                  <Link
+                    href={`/hail-damage-repair/${city.slug}`}
+                    className="text-gray-400 hover:text-[#c9a84c] text-xs transition-colors"
+                  >
+                    {city.name}
                   </Link>
                 </li>
               ))}
+            </ul>
+            <Link href="/hail-damage-repair" className="text-[#c9a84c] text-xs mt-3 inline-block hover:underline">
+              View all 35 cities →
+            </Link>
+          </div>
+
+          {/* Column 4: Quick Links */}
+          <div>
+            <h3 className="text-white font-bold text-sm uppercase tracking-wider mb-4">Quick Links</h3>
+            <ul className="space-y-2">
+              <li><Link href="/free-estimate" className="text-gray-400 hover:text-[#c9a84c] text-sm transition-colors">Free Estimate</Link></li>
+              <li><Link href="/insurance-claims" className="text-gray-400 hover:text-[#c9a84c] text-sm transition-colors">Insurance Claims</Link></li>
+              <li><Link href="/hail-season-dfw" className="text-gray-400 hover:text-[#c9a84c] text-sm transition-colors">DFW Hail Season Guide</Link></li>
+              <li><Link href="/blog" className="text-gray-400 hover:text-[#c9a84c] text-sm transition-colors">Blog</Link></li>
+              <li><Link href="/about" className="text-gray-400 hover:text-[#c9a84c] text-sm transition-colors">About Us</Link></li>
+              <li><Link href="/reviews" className="text-gray-400 hover:text-[#c9a84c] text-sm transition-colors">Reviews</Link></li>
+              <li><Link href="/sitemap.xml" className="text-gray-400 hover:text-[#c9a84c] text-sm transition-colors">Sitemap</Link></li>
             </ul>
           </div>
         </div>
-      </div>
 
-      {/* Bottom bar */}
-      <div className="border-t border-white/10">
-        <div className="container-xl py-4 flex flex-col sm:flex-row items-center justify-between text-xs text-gray-500 gap-2">
-          <span>© 2026 Dent Boyz | dent-boyz.com | Serving North Dallas, TX</span>
-          <span>Frisco · McKinney · Plano · Allen · Prosper · Celina</span>
+        {/* Bottom bar */}
+        <div className="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center gap-4">
+          <p className="text-gray-500 text-xs">
+            © {new Date().getFullYear()} Dent Boyz. All rights reserved. Serving North Dallas &amp; DFW.
+          </p>
+          <div className="flex gap-6">
+            <Link href="/privacy-policy" className="text-gray-500 hover:text-gray-400 text-xs">Privacy Policy</Link>
+            <Link href="/terms" className="text-gray-500 hover:text-gray-400 text-xs">Terms of Service</Link>
+          </div>
         </div>
       </div>
     </footer>
-  );
+  )
 }

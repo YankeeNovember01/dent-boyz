@@ -7,10 +7,8 @@ import Image from 'next/image';
 const serviceLinks = [
   { label: 'Hail Damage Repair', href: '/hail-damage-repair' },
   { label: 'Door Ding Removal', href: '/services/door-ding-removal' },
-  { label: 'Crease Repair', href: '/services/crease-repair' },
   { label: 'Large Dent Repair', href: '/services/large-dent-repair' },
   { label: 'Bumper Repair', href: '/services/bumper-repair' },
-  { label: 'Motorcycle Dent Repair', href: '/services/motorcycle-dent-repair' },
   { label: 'Lease Return Dent Repair', href: '/services/lease-return-dent-repair' },
   { label: 'Free Hail Damage Inspection', href: '/services/free-hail-damage-inspection' },
 ];
@@ -55,7 +53,7 @@ export default function Nav() {
             </button>
 
             {servicesOpen && (
-              <div className="absolute left-0 top-full mt-1 w-64 bg-white shadow-xl border border-gray-100 overflow-hidden z-50">
+              <div className="absolute left-0 top-full w-64 bg-white shadow-xl border border-gray-100 overflow-hidden z-50">
                 {serviceLinks.map((link) => (
                   <Link
                     key={link.href}
