@@ -134,8 +134,15 @@ export default function HomePage() {
               {/* Radial fade overlay — blends white box edges into navy */}
               <div style={{
                 position: 'absolute',
+                inset: '-10px',
+                background: 'radial-gradient(ellipse at center, transparent 30%, rgba(10,22,40,0.6) 55%, #0A1628 72%)',
+                pointerEvents: 'none',
+              }} />
+              {/* Extra edge kill */}
+              <div style={{
+                position: 'absolute',
                 inset: 0,
-                background: 'radial-gradient(ellipse at center, transparent 45%, #0A1628 80%)',
+                boxShadow: 'inset 0 0 60px 40px #0A1628',
                 pointerEvents: 'none',
               }} />
             </div>
