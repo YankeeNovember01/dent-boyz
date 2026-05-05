@@ -192,7 +192,7 @@ export default function HailDamageRepairPage() {
               </div>
               <div className="rounded-xl overflow-hidden shadow-md">
                 <PhotoWithMeta
-                  src="/images/pdr/pdr-closeup.jpg"
+                  src="/images/pdr/pdr-process.jpg"
                   alt="Paintless dent repair process in North Dallas, TX — PDR technician using specialized tools on vehicle panel | Dent Boyz"
                   city="North Dallas"
                   width={600}
