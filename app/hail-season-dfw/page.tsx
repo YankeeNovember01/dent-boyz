@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: 'DFW Hail Season Guide — When It Hits & What To Do | Dent Boyz',
   description:
     'When is hail season in Dallas-Fort Worth? Peak months, worst historical storms, and exactly what to do when hail hits your car in North Texas.',
+  alternates: { canonical: 'https://dent-boyz.com/hail-season-dfw' },
 };
 
 const faqItems = [

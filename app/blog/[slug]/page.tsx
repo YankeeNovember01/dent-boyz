@@ -75,7 +75,7 @@ const postMeta: Record<string, { title: string; description: string }> = {
 export function generateMetadata({ params }: PageProps): Metadata {
   const meta = postMeta[params.slug]
   if (!meta) return {}
-  return { title: meta.title, description: meta.description }
+  return { title: meta.title, description: meta.description, alternates: { canonical: `https://dent-boyz.com/blog/${params.slug}` } }
 }
 
 // ─── Helpers ─────────────────────────────────────────────────────────────────

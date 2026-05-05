@@ -7,6 +7,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Free Hail Damage Inspection North Dallas TX | Dent Boyz',
   description: "Get a free hail damage inspection in North Dallas. No obligation. Know what you're dealing with before you call insurance. Serving Frisco, McKinney, Plano & more.",
+  alternates: { canonical: 'https://dent-boyz.com/services/free-hail-damage-inspection' },
 };
 
 const faqItems = [

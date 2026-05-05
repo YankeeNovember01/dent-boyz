@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Reviews | Dent Boyz — North Dallas PDR & Hail Damage Repair',
   description:
     'See what North Dallas drivers say about Dent Boyz. Read real reviews from customers in Frisco, McKinney, Plano, Prosper & more.',
+  alternates: { canonical: 'https://dent-boyz.com/reviews' },
 };
 
 // -----------------------------------------------------------------------

@@ -7,6 +7,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Lease Return Dent Repair North Dallas | Fix Before Dealer Charges You | Dent Boyz',
   description: 'Returning a leased vehicle soon? Get lease return dent repair in North Dallas before the dealer charges you 3–5x more. Fast turnaround. Free estimate.',
+  alternates: { canonical: 'https://dent-boyz.com/services/lease-return-dent-repair' },
 };
 
 const faqItems = [

@@ -7,6 +7,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Bumper Dent Repair North Dallas TX | Dent Boyz PDR',
   description: 'Minor bumper dent repair in North Dallas. Plastic bumper restoration and minor collision repair. Save thousands vs. replacement. Free estimate.',
+  alternates: { canonical: 'https://dent-boyz.com/services/bumper-repair' },
 };
 
 const faqItems = [

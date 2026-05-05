@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'About Dent Boyz | North Dallas PDR & Hail Damage Repair Experts',
   description:
     "Meet the Dent Boyz team — North Dallas' trusted paintless dent repair and auto hail damage specialists. Serving Frisco, McKinney, Plano & all of North Dallas.",
+  alternates: { canonical: 'https://dent-boyz.com/about' },
 };
 
 const differentiators = [

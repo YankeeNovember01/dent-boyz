@@ -6,6 +6,7 @@ export const metadata: Metadata = {
   title: 'Get a Free Hail Damage Estimate | Dent Boyz North Dallas',
   description:
     'Get a free, no-obligation hail damage estimate from Dent Boyz. Serving Frisco, McKinney, Plano & all of North Dallas. Call (214) 555-0100 or fill out the form.',
+  alternates: { canonical: 'https://dent-boyz.com/free-estimate' },
 };
 
 const trustBadges = [

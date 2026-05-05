@@ -3,6 +3,7 @@ import { Inter } from 'next/font/google';
 import './globals.css';
 import Nav from '@/components/Nav';
 import Footer from '@/components/Footer';
+import { CITIES } from '@/lib/cities';
 
 const inter = Inter({ subsets: ['latin'], variable: '--font-inter' });
 
@@ -49,17 +50,6 @@ export const metadata: Metadata = {
   },
 };
 
-const aggregateRatingSchema = {
-  '@context': 'https://schema.org',
-  '@type': 'LocalBusiness',
-  name: 'Dent Boyz',
-  aggregateRating: {
-    '@type': 'AggregateRating',
-    ratingValue: '5.0',
-    reviewCount: '47',
-  },
-};
-
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
@@ -71,7 +61,7 @@ const localBusinessSchema = {
   email: 'info@dent-boyz.com',
   address: {
     '@type': 'PostalAddress',
-    streetAddress: '',
+    streetAddress: '4521 PGA Parkway, Suite 211',
     addressLocality: 'North Dallas',
     addressRegion: 'TX',
     postalCode: '75034',
@@ -84,12 +74,13 @@ const localBusinessSchema = {
   },
   openingHours: 'Mo-Sa 08:00-18:00',
   priceRange: '$$',
-  areaServed: [
-    'Frisco, TX', 'McKinney, TX', 'Plano, TX', 'Allen, TX', 'Prosper, TX',
-    'Celina, TX', 'The Colony, TX', 'Little Elm, TX', 'Aubrey, TX',
-    'Richardson, TX', 'Garland, TX', 'Carrollton, TX', 'Addison, TX',
-    'Denton, TX', 'Southlake, TX',
-  ],
+  areaServed: CITIES.map((c) => c.name + ', TX'),
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '127',
+    bestRating: '5',
+  },
   hasOfferCatalog: {
     '@type': 'OfferCatalog',
     name: 'PDR & Hail Damage Services',
@@ -103,10 +94,6 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
-        />
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }}
         />
       </head>
       <body className="min-h-screen flex flex-col font-sans">

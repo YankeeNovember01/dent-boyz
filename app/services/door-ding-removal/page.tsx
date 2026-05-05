@@ -7,6 +7,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Door Ding Removal North Dallas TX | Dent Boyz PDR',
   description: 'Fast, affordable door ding removal in Frisco, Plano, McKinney & North Dallas. Most repairs done same day. No paint damage. Free estimate.',
+  alternates: { canonical: 'https://dent-boyz.com/services/door-ding-removal' },
 };
 
 const faqItems = [

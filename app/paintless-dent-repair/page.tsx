@@ -8,6 +8,7 @@ export const metadata: Metadata = {
   title: 'Paintless Dent Repair in North Dallas TX | Dent Boyz PDR',
   description:
     'What is paintless dent repair? Learn how PDR works, what it costs, and why it beats a body shop for hail damage & dents. Serving all of North Dallas, TX.',
+  alternates: { canonical: 'https://dent-boyz.com/paintless-dent-repair' },
 };
 
 const howToSchema = {

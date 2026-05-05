@@ -7,6 +7,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Crease Dent Repair North Dallas TX | Dent Boyz PDR',
   description: 'Expert crease dent repair in North Dallas. Creases are harder than round dents — our specialists handle them without repainting. Free estimate.',
+  alternates: { canonical: 'https://dent-boyz.com/services/crease-repair' },
 };
 
 const faqItems = [

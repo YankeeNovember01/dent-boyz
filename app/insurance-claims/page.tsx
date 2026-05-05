@@ -9,6 +9,7 @@ export const metadata: Metadata = {
   title: 'Auto Hail Insurance Claims Texas — Step-by-Step Guide | Dent Boyz',
   description:
     'Confused about filing a hail damage claim in Texas? Step-by-step guide covers State Farm, USAA, Allstate & more. Dent Boyz handles the entire process.',
+  alternates: { canonical: 'https://dent-boyz.com/insurance-claims' },
 };
 
 const steps = [

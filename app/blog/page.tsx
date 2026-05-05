@@ -7,6 +7,7 @@ export const metadata: Metadata = {
   title: 'Hail Damage & PDR Blog | North Dallas Tips & Guides | Dent Boyz',
   description:
     'Expert guides on hail damage repair, insurance claims, PDR, and protecting your car in North Texas. From the Dent Boyz team serving Frisco, McKinney, Plano & more.',
+  alternates: { canonical: 'https://dent-boyz.com/blog' },
 }
 
 const categoryColors: Record<string, string> = {

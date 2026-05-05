@@ -7,6 +7,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Large Dent Repair Dallas TX | Paintless Dent Removal | Dent Boyz',
   description: 'Large dent repair in North Dallas using PDR. Grocery cart hits, minor fender benders, parking lot damage. Free estimate — most large dents are still fixable.',
+  alternates: { canonical: 'https://dent-boyz.com/services/large-dent-repair' },
 };
 
 const faqItems = [

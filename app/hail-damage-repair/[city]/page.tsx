@@ -21,6 +21,7 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
   return {
     title: `Hail Damage Repair in ${city.name}, TX | Dent Boyz`,
     description: `Expert auto hail damage repair in ${city.name}, TX — ${city.angle}. Free inspection, deductible assistance, insurance direct billing. Call Dent Boyz at (214) 555-0100.`,
+    alternates: { canonical: `https://dent-boyz.com/hail-damage-repair/${params.city}` },
   };
 }
 

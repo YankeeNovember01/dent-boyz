@@ -12,6 +12,7 @@ export const metadata: Metadata = {
   title: 'North Dallas Hail Damage Repair — Factory Paint. Zero Hassle.',
   description:
     'Dent Boyz — North Dallas auto hail damage repair specialists. Free inspection, insurance direct billing, deductible assistance. Serving Frisco, McKinney, Plano, Prosper, Celina & more.',
+  alternates: { canonical: 'https://dent-boyz.com' },
 };
 
 const insuranceSteps = [

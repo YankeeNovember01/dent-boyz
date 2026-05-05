@@ -7,6 +7,7 @@ import SchemaMarkup from '@/components/SchemaMarkup';
 export const metadata: Metadata = {
   title: 'Motorcycle Dent Repair Dallas TX | Tank & Fairing PDR | Dent Boyz',
   description: 'Motorcycle and tank dent repair in North Dallas using PDR. Preserve your paint, restore your tank. Harley, Honda, Ducati, BMW and more. Free estimate.',
+  alternates: { canonical: 'https://dent-boyz.com/services/motorcycle-dent-repair' },
 };
 
 const faqItems = [

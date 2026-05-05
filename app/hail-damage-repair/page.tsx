@@ -10,6 +10,7 @@ export const metadata: Metadata = {
   title: 'Auto Hail Damage Repair in North Dallas, TX | Dent Boyz',
   description:
     'Expert auto hail damage repair in Frisco, McKinney, Plano & North Dallas. Free inspection, deductible assistance, insurance direct billing. Call Dent Boyz.',
+  alternates: { canonical: 'https://dent-boyz.com/hail-damage-repair' },
 };
 
 const faqItems = [
