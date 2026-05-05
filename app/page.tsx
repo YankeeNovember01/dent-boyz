@@ -135,14 +135,14 @@ export default function HomePage() {
               <div style={{
                 position: 'absolute',
                 inset: '-10px',
-                background: 'radial-gradient(ellipse at center, transparent 30%, rgba(10,22,40,0.6) 55%, #0A1628 72%)',
+                background: 'radial-gradient(ellipse at center, transparent 50%, rgba(10,22,40,0.4) 68%, #0A1628 82%)',
                 pointerEvents: 'none',
               }} />
               {/* Extra edge kill */}
               <div style={{
                 position: 'absolute',
                 inset: 0,
-                boxShadow: 'inset 0 0 60px 40px #0A1628',
+                boxShadow: 'inset 0 0 40px 20px #0A1628',
                 pointerEvents: 'none',
               }} />
             </div>
