@@ -1,6 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
+import Image from 'next/image';
 import { CITIES, getCityBySlug, getNearbyCities, getCityContent } from '@/lib/cities';
 import CTABlock from '@/components/CTABlock';
 import LeadForm from '@/components/LeadForm';
@@ -143,6 +144,19 @@ export default function CityPage({ params }: Props) {
         dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
       />
 
+      {/* CITY HERO IMAGE */}
+      <div className="relative w-full h-48 md:h-64 overflow-hidden">
+        <Image
+          src={`/images/cities/${params.city}.jpg`}
+          alt={`${city.name}, TX — Dent Boyz hail damage repair service area`}
+          fill
+          sizes="100vw"
+          className="object-cover"
+          priority
+        />
+        <div className="absolute inset-0 bg-navy/50" />
+      </div>
+
       {/* HERO */}
       <section className="bg-navy text-white py-20 px-4">
         <div className="container-xl">
@@ -209,12 +223,12 @@ export default function CityPage({ params }: Props) {
             </div>
             <div className="rounded-xl overflow-hidden shadow-md">
               <PhotoWithMeta
-                src="/images/hail/hail-storm-car.jpg"
-                alt={`Auto hail damage repair in ${city.name}, TX — vehicle with hail dents being restored by PDR technician | Dent Boyz`}
+                src={`/images/cities/${params.city}.jpg`}
+                alt={`${city.name}, TX — Hail damage repair service area | Dent Boyz PDR`}
                 city={city.name}
-                width={600}
-                height={400}
-                className="w-full h-auto"
+                width={1200}
+                height={800}
+                className="w-full h-64 md:h-80 object-cover"
               />
             </div>
           </div>
