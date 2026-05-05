@@ -29,9 +29,9 @@ export default function Footer() {
                 <Image
                   src="/images/logo.png"
                   alt="Dent Boyz"
-                  width={160}
-                  height={48}
-                  className="h-12 w-auto"
+                  width={240}
+                  height={80}
+                  className="h-20 w-auto object-contain"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
                 />
               </Link>
