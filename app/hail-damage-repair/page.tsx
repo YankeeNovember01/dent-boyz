@@ -21,7 +21,7 @@ const faqItems = [
   {
     question: 'How long does hail damage repair take?',
     answer:
-      'Once your vehicle is in our shop, most hail damage repairs are completed in 1–3 business days. Vehicles with severe damage — including large concentrations of deep dents, damage to moldings, or damage to glass — may take up to 5–7 days. Keep in mind the full process from filing your insurance claim to repair start typically takes 1–2 weeks (adjuster appointment + estimate approval). We\'ll give you an accurate timeline during your free inspection and coordinate rental vehicles through your insurance if needed.',
+      'Once your vehicle is in our shop and the insurance claim gets approval, we immediately begin the repair process. Most hail damage repairs are completed in 1–3 business days. Vehicles with severe damage — including large concentrations of deep dents, damage to moldings, or damage to glass — may take up to 5–7 days. Keep in mind the full process from filing your claim to repair start typically takes 1–2 weeks at most. We\'ll give you an accurate timeline during your free inspection and coordinate rental vehicles through your insurance if needed.',
   },
   {
     question: 'Will my car look factory original after PDR?',

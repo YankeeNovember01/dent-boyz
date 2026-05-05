@@ -49,7 +49,7 @@ const steps = [
   {
     num: '08',
     title: 'Repair Begins',
-    content: `Once your vehicle is in our shop, most hail damage repairs are completed in 1–3 business days. Severe damage may take up to 5–7 days. If any glass needs replacement (windshield cracks from hail impact), we coordinate that separately. You\'ll receive updates throughout the process. We do not return a vehicle until it passes our rigorous final inspection under specialized lighting.`,
+    content: `Once your vehicle is in our shop and the insurance claim gets approval, we immediately begin the repair process. Most hail damage repairs are completed in 1–3 business days. Severe damage may take up to 5–7 days. Keep in mind the full process from filing your claim to repair start typically takes 1–2 weeks at most. If any glass needs replacement (windshield cracks from hail impact), we coordinate that separately. You\'ll receive updates throughout the process. We do not return a vehicle until it passes our rigorous final inspection under specialized lighting.`,
   },
   {
     num: '09',

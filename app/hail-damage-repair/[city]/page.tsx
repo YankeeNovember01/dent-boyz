@@ -29,7 +29,7 @@ function buildCityFAQ(city: ReturnType<typeof getCityBySlug>) {
   return [
     {
       question: `How quickly can Dent Boyz respond to hail damage in ${city.name}, TX?`,
-      answer: `We typically schedule free inspections in ${city.name} within 1–2 business days of your call. The full insurance process (adjuster + estimate approval) takes about 1–2 weeks. Once your vehicle is in our shop, most repairs take 1–3 business days. We also offer mobile service — our technicians can come to your home in ${city.neighborhoods} or your office for the inspection.`,
+      answer: `We typically schedule free inspections in ${city.name} within 1–2 business days of your call. Once your vehicle is in our shop and the insurance claim gets approval, we immediately begin the repair process. Most repairs take 1–3 business days. Keep in mind the full process from filing your claim to repair start typically takes 1–2 weeks at most. We also offer mobile service — our technicians can come to your home in ${city.neighborhoods} or your office for the inspection.`,
     },
     {
       question: `Does Dent Boyz offer mobile PDR service in ${city.name}?`,
