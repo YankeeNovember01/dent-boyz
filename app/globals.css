@@ -3,11 +3,46 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 26, 26, 26;
-  --background-rgb: 245, 245, 245;
+  --color-navy: #0A1628;
+  --color-navy-dark: #060E1A;
+  --color-electric-blue: #1E90FF;
+  --color-gold: #F5A623;
+  --color-gold-dark: #D4891A;
+  --color-white: #FFFFFF;
+  --color-light-gray: #F8F9FA;
+  --color-dark-text: #1A1A2E;
+}
+
+* {
+  box-sizing: border-box;
 }
 
 body {
-  color: rgb(var(--foreground-rgb));
-  background: rgb(var(--background-rgb));
+  color: var(--color-dark-text);
+  background: var(--color-white);
+  font-family: var(--font-inter), sans-serif;
+}
+
+@layer components {
+  .btn-gold {
+    @apply bg-gold text-navy font-bold px-6 py-3 rounded-lg hover:bg-gold-dark transition-colors inline-block;
+  }
+  .btn-outline-white {
+    @apply border-2 border-white text-white font-semibold px-6 py-3 rounded-lg hover:bg-white hover:text-navy transition-colors inline-block;
+  }
+  .btn-navy {
+    @apply bg-navy text-white font-bold px-6 py-3 rounded-lg hover:bg-navy-dark transition-colors inline-block;
+  }
+  .section-dark {
+    @apply bg-navy text-white;
+  }
+  .section-light {
+    @apply bg-light-gray text-dark-text;
+  }
+  .section-white {
+    @apply bg-white text-dark-text;
+  }
+  .container-xl {
+    @apply max-w-6xl mx-auto px-4 sm:px-6 lg:px-8;
+  }
 }

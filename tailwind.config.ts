@@ -9,11 +9,13 @@ const config: Config = {
   theme: {
     extend: {
       colors: {
-        brand: {
-          red: "#C8102E",
-          dark: "#1A1A1A",
-          light: "#F5F5F5",
-        },
+        navy: "#0A1628",
+        "navy-dark": "#060E1A",
+        "electric-blue": "#1E90FF",
+        gold: "#F5A623",
+        "gold-dark": "#D4891A",
+        "light-gray": "#F8F9FA",
+        "dark-text": "#1A1A2E",
       },
       fontFamily: {
         sans: ["var(--font-inter)", "sans-serif"],
