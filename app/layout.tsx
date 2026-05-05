@@ -43,6 +43,17 @@ export const metadata: Metadata = {
   },
 };
 
+const aggregateRatingSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'LocalBusiness',
+  name: 'Dent Boyz',
+  aggregateRating: {
+    '@type': 'AggregateRating',
+    ratingValue: '5.0',
+    reviewCount: '47',
+  },
+};
+
 const localBusinessSchema = {
   '@context': 'https://schema.org',
   '@type': 'LocalBusiness',
@@ -86,6 +97,10 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(localBusinessSchema) }}
+        />
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(aggregateRatingSchema) }}
         />
       </head>
       <body className="min-h-screen flex flex-col font-sans">

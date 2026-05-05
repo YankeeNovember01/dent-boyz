@@ -57,6 +57,31 @@ export default function CityPage({ params }: Props) {
   const nearbyCities = getNearbyCities(city.slug, 5);
   const faqItems = buildCityFAQ(city);
 
+  const breadcrumbSchema = {
+    '@context': 'https://schema.org',
+    '@type': 'BreadcrumbList',
+    itemListElement: [
+      {
+        '@type': 'ListItem',
+        position: 1,
+        name: 'Home',
+        item: 'https://dent-boyz.com',
+      },
+      {
+        '@type': 'ListItem',
+        position: 2,
+        name: 'Hail Damage Repair',
+        item: 'https://dent-boyz.com/hail-damage-repair',
+      },
+      {
+        '@type': 'ListItem',
+        position: 3,
+        name: `${city.name} TX`,
+        item: `https://dent-boyz.com/hail-damage-repair/${city.slug}`,
+      },
+    ],
+  };
+
   const localBusinessSchema = {
     name: 'Dent Boyz',
     description: `Auto hail damage repair and paintless dent repair in ${city.name}, TX`,
@@ -104,6 +129,10 @@ export default function CityPage({ params }: Props) {
       <SchemaMarkup type="LocalBusiness" data={localBusinessSchema} />
       <SchemaMarkup type="Service" data={serviceSchema} />
       <SchemaMarkup type="FAQPage" data={faqSchema} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
 
       {/* HERO */}
       <section className="bg-navy text-white py-20 px-4">

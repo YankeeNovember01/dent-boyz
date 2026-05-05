@@ -51,9 +51,24 @@ const leaseCities = [
   { name: 'Plano Legacy West', slug: 'plano' },
 ];
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://dent-boyz.com' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://dent-boyz.com/#services' },
+    { '@type': 'ListItem', position: 3, name: 'Lease Return Dent Repair', item: 'https://dent-boyz.com/services/lease-return-dent-repair' },
+  ],
+};
+
 export default function LeaseReturnDentRepairPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <SchemaMarkup type="FAQPage" data={faqSchema} />
       <SchemaMarkup type="Service" data={serviceSchema} />
 

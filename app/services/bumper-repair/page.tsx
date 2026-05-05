@@ -40,9 +40,24 @@ const serviceSchema = {
   areaServed: 'North Dallas, TX',
 };
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://dent-boyz.com' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://dent-boyz.com/#services' },
+    { '@type': 'ListItem', position: 3, name: 'Bumper Repair', item: 'https://dent-boyz.com/services/bumper-repair' },
+  ],
+};
+
 export default function BumperRepairPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <SchemaMarkup type="FAQPage" data={faqSchema} />
       <SchemaMarkup type="Service" data={serviceSchema} />
 

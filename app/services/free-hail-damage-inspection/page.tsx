@@ -50,9 +50,24 @@ const serviceSchema = {
   },
 };
 
+
+const breadcrumbSchema = {
+  '@context': 'https://schema.org',
+  '@type': 'BreadcrumbList',
+  itemListElement: [
+    { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://dent-boyz.com' },
+    { '@type': 'ListItem', position: 2, name: 'Services', item: 'https://dent-boyz.com/#services' },
+    { '@type': 'ListItem', position: 3, name: 'Free Hail Damage Inspection', item: 'https://dent-boyz.com/services/free-hail-damage-inspection' },
+  ],
+};
+
 export default function FreeHailDamageInspectionPage() {
   return (
     <>
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(breadcrumbSchema) }}
+      />
       <SchemaMarkup type="FAQPage" data={faqSchema} />
       <SchemaMarkup type="Service" data={serviceSchema} />
 

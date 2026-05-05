@@ -71,6 +71,8 @@ export default function Nav() {
 
           <Link href="/hail-damage-repair#cities" className="hover:text-gold transition-colors">Cities</Link>
           <Link href="/insurance-claims" className="hover:text-gold transition-colors">Insurance Claims</Link>
+          <Link href="/about" className="hover:text-gold transition-colors">About</Link>
+          <Link href="/reviews" className="hover:text-gold transition-colors">Reviews</Link>
           <span className="text-gray-400">|</span>
           <a href="tel:2145550100" className="text-electric-blue hover:text-gold transition-colors font-semibold">(214) 555-0100</a>
           <Link href="/free-estimate" className="bg-gold text-navy font-bold px-4 py-2 rounded-lg hover:bg-gold-dark transition-colors text-sm">
@@ -127,6 +129,8 @@ export default function Nav() {
 
           <Link href="/hail-damage-repair#cities" className="py-2 hover:text-gold transition-colors" onClick={() => setMenuOpen(false)}>Cities</Link>
           <Link href="/insurance-claims" className="py-2 hover:text-gold transition-colors" onClick={() => setMenuOpen(false)}>Insurance Claims</Link>
+          <Link href="/about" className="py-2 hover:text-gold transition-colors" onClick={() => setMenuOpen(false)}>About</Link>
+          <Link href="/reviews" className="py-2 hover:text-gold transition-colors" onClick={() => setMenuOpen(false)}>Reviews</Link>
           <a href="tel:2145550100" className="py-2 text-electric-blue font-semibold">(214) 555-0100</a>
           <Link
             href="/free-estimate"
