@@ -1,5 +1,6 @@
 import type { Metadata } from 'next';
 import Link from 'next/link';
+import Image from 'next/image';
 import ServiceGrid from '@/components/ServiceGrid';
 import CityGrid from '@/components/CityGrid';
 import CTABlock from '@/components/CTABlock';
@@ -109,6 +110,23 @@ export default function HomePage() {
           }}
         />
         <div className="container-xl relative z-10">
+          <div className="flex flex-col lg:flex-row items-center lg:items-start gap-12">
+          {/* Logo — slides in from right on load */}
+          <div
+            className="order-first lg:order-last lg:ml-auto flex-shrink-0 animate-slide-in-right"
+            style={{
+              animation: 'slideInRight 0.7s cubic-bezier(0.22,1,0.36,1) both',
+            }}
+          >
+            <Image
+              src="/images/logo.png"
+              alt="Dent Boyz PDR — North Dallas Hail Damage Repair"
+              width={340}
+              height={340}
+              className="w-48 md:w-64 lg:w-80 h-auto drop-shadow-2xl"
+              priority
+            />
+          </div>
           <div className="max-w-3xl">
             <div className="w-12 h-0.5 bg-gold mb-8"></div>
             <h1 className="text-4xl md:text-5xl lg:text-7xl font-extrabold tracking-tight leading-none mb-6">
@@ -142,6 +160,7 @@ export default function HomePage() {
                 </span>
               ))}
             </div>
+          </div>
           </div>
         </div>
       </section>
