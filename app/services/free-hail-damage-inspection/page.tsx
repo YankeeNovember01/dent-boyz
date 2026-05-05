@@ -119,7 +119,7 @@ export default function FreeHailDamageInspectionPage() {
                 desc: 'You\'ll know every panel, every dent, every piece of trim — before anyone else tells you. No surprises. No being misled about the scope of damage.',
               },
               {
-                icon: '🆓',
+                icon: '',
                 title: 'It\'s completely free',
                 desc: '20–30 minutes. No charge. No pressure. No obligation to repair anything or file any claim. Just information.',
               },
