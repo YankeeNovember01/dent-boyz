@@ -214,7 +214,7 @@ export default function HomePage() {
           <div className="grid md:grid-cols-6 gap-0 mb-16">
             {insuranceSteps.map((s, i) => (
               <div key={s.step} className="relative border border-gray-100 p-6 md:p-8 bg-white">
-                <div className="text-5xl font-extrabold text-gold/20 mb-4 leading-none">{s.step}</div>
+                <div className="text-5xl font-extrabold text-gold/60 mb-4 leading-none">{s.step}</div>
                 <div className="w-8 h-0.5 bg-gold mb-3"></div>
                 <h3 className="font-extrabold text-dark-text mb-3 text-sm uppercase tracking-wide">{s.title}</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">{s.desc}</p>
