@@ -125,6 +125,7 @@ export default function HomePage() {
               width={340}
               height={340}
               className="w-48 md:w-64 lg:w-80 h-auto rounded-2xl"
+              sizes="(max-width: 768px) 192px, (max-width: 1024px) 256px, 320px"
               priority
             />
           </div>

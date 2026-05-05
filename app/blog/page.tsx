@@ -1,6 +1,5 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
-import SchemaMarkup from '@/components/SchemaMarkup'
 import { POSTS } from '@/lib/posts'
 
 export const metadata: Metadata = {
@@ -25,23 +24,35 @@ function formatDate(dateStr: string) {
   })
 }
 
-const blogSchema = {
-  '@type': 'Blog',
-  name: 'North Dallas Hail & PDR Resource Center',
-  description:
-    'Expert guides on hail damage repair, insurance claims, PDR, and protecting your car in North Texas.',
-  url: 'https://dent-boyz.com/blog',
-  publisher: {
-    '@type': 'LocalBusiness',
-    name: 'Dent Boyz',
-    url: 'https://dent-boyz.com',
-  },
-}
 
 export default function BlogIndexPage() {
   return (
     <>
-      <SchemaMarkup type="Service" data={blogSchema} />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'Blog',
+          name: 'Dent Boyz Blog — PDR & Hail Damage Tips',
+          url: 'https://dent-boyz.com/blog',
+          description: 'Expert tips on paintless dent repair, hail damage, and auto insurance claims in North Dallas.',
+          publisher: {
+            '@type': 'LocalBusiness',
+            name: 'Dent Boyz',
+          },
+        }) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify({
+          '@context': 'https://schema.org',
+          '@type': 'BreadcrumbList',
+          itemListElement: [
+            { '@type': 'ListItem', position: 1, name: 'Home', item: 'https://dent-boyz.com' },
+            { '@type': 'ListItem', position: 2, name: 'Blog', item: 'https://dent-boyz.com/blog' },
+          ],
+        }) }}
+      />
 
       {/* Dark header */}
       <section className="bg-navy text-white py-20 px-4">

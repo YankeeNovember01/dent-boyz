@@ -32,6 +32,7 @@ export default function Footer() {
                   width={240}
                   height={80}
                   className="h-20 w-auto object-contain"
+                  sizes="240px"
                   onError={(e) => { (e.target as HTMLImageElement).style.display = 'none' }}
                 />
               </Link>
@@ -65,14 +66,14 @@ export default function Footer() {
                 <li key={city.slug}>
                   <Link
                     href={`/hail-damage-repair/${city.slug}`}
-                    className="text-gray-400 hover:text-[#c9a84c] text-xs transition-colors"
+                    className="text-gray-400 hover:text-[#c9a84c] text-sm transition-colors"
                   >
                     {city.name}
                   </Link>
                 </li>
               ))}
             </ul>
-            <Link href="/hail-damage-repair" className="text-[#c9a84c] text-xs mt-3 inline-block hover:underline">
+            <Link href="/hail-damage-repair" className="text-[#c9a84c] text-sm mt-3 inline-block hover:underline">
               View all 35 cities →
             </Link>
           </div>

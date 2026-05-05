@@ -1,3 +1,5 @@
+import Image from 'next/image'
+
 const carriers = [
   { name: 'State Farm', slug: 'state-farm', file: '/images/carriers/state-farm.svg' },
   { name: 'USAA', slug: 'usaa', file: '/images/carriers/usaa.svg' },
@@ -18,9 +20,12 @@ export default function CarrierGrid() {
           className="bg-white border border-gray-200 p-6 flex flex-col items-center justify-center gap-3 hover:border-b-4 hover:border-b-[#c9a84c] transition-all"
         >
           <div className="h-12 flex items-center justify-center">
-            <img
+            <Image
               src={c.file}
               alt={c.name + ' logo'}
+              width={120}
+              height={48}
+              sizes="120px"
               className="h-10 w-auto object-contain"
             />
           </div>

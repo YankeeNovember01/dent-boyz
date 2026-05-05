@@ -249,7 +249,7 @@ export default function DoorDingRemovalPage() {
             {cities.map((city) => (
               <Link
                 key={city.slug}
-                href={`/hail-damage-repair/${city.slug}-tx`}
+                href={`/hail-damage-repair/${city.slug}`}
                 className="bg-light-gray rounded-lg px-4 py-3 text-sm font-medium text-dark-text text-center hover:bg-gold hover:text-navy transition-colors"
               >
                 {city.name}

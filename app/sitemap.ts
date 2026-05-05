@@ -24,13 +24,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/paintless-dent-repair`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/insurance-claims`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/hail-season-dfw`,
@@ -42,7 +42,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/free-estimate`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.9,
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/blog`,
@@ -54,13 +54,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/about`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.6,
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/reviews`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.6,
+      priority: 0.7,
     },
     // Service pages
     {
@@ -85,13 +85,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
       url: `${BASE_URL}/services/lease-return-dent-repair`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.6,
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/services/free-hail-damage-inspection`,
       lastModified: now,
       changeFrequency: 'monthly',
-      priority: 0.8,
+      priority: 0.7,
     },
   ];
 

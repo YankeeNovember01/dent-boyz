@@ -1,12 +1,11 @@
 import { NextRequest, NextResponse } from 'next/server';
 import { createClient } from '@supabase/supabase-js';
 
-const supabase = createClient(
-  'https://ptdvazakndnykuyznvxq.supabase.co',
-  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6InB0ZHZhemFrbmRueWt1eXpudnhxIiwicm9sZSI6ImFub24iLCJpYXQiOjE3Nzc5MzQwMzQsImV4cCI6MjA5MzUxMDAzNH0.AypKiGEMwfBtBH2XlD2r7BWgPycfw03jMmWSllZr1Dk'
-);
-
 export async function POST(request: NextRequest) {
+  const supabase = createClient(
+    process.env.NEXT_PUBLIC_SUPABASE_URL!,
+    process.env.NEXT_PUBLIC_SUPABASE_ANON_KEY!
+  );
   try {
     const body = await request.json();
     const { name, phone, email, vehicle, zip, message, source_page } = body;
