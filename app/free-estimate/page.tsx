@@ -87,7 +87,7 @@ export default function FreeEstimatePage() {
             <div>
               <h2 className="text-2xl font-extrabold text-dark-text mb-2">Request Your Free Estimate</h2>
               <p className="text-gray-600 text-sm mb-8">
-                Fill out the form and a Dent Boyz specialist will contact you within 1 business hour
+                Fill out the form and a Dent Boyz specialist will contact you within 1 business day
                 to confirm your appointment.
               </p>
               <LeadForm />
@@ -113,7 +113,7 @@ export default function FreeEstimatePage() {
                 <h3 className="font-bold text-dark-text text-lg mb-4">What Happens Next</h3>
                 <ol className="space-y-4">
                   {[
-                    { step: '1', text: 'We call you within 1 business hour to confirm' },
+                    { step: '1', text: 'We call you within 1 business day to confirm' },
                     { step: '2', text: 'Schedule inspection at your home, office, or our shop' },
                     { step: '3', text: 'Free 30–45 min inspection with full damage documentation' },
                     { step: '4', text: 'Receive honest assessment + clear estimate' },

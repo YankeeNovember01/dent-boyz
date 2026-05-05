@@ -237,7 +237,7 @@ export default function FreeHailDamageInspectionPage() {
               {
                 icon: '',
                 title: 'Fill Out the Form',
-                desc: 'Use the form below — we\'ll reach out same day within 1 business hour.',
+                desc: 'Use the form below — we\'ll reach out same day within 1 business day.',
                 action: null,
               },
               {
@@ -282,7 +282,7 @@ export default function FreeHailDamageInspectionPage() {
         <div className="container-xl max-w-2xl">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-extrabold text-dark-text mb-3">Schedule Your Free Inspection</h2>
-            <p className="text-gray-600">Fill out the form and we&apos;ll contact you within 1 business hour to set up a time.</p>
+            <p className="text-gray-600">Fill out the form and we&apos;ll contact you within 1 business day to set up a time.</p>
           </div>
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <LeadForm />

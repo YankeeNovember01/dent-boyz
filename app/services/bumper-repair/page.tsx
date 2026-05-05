@@ -199,7 +199,7 @@ export default function BumperRepairPage() {
         <div className="container-xl max-w-2xl">
           <div className="text-center mb-10">
             <h2 className="text-3xl font-extrabold text-dark-text mb-3">Get Your Free Estimate</h2>
-            <p className="text-gray-600">We&apos;ll respond within 1 business hour.</p>
+            <p className="text-gray-600">We&apos;ll respond within 1 business day.</p>
           </div>
           <div className="bg-white rounded-2xl shadow-lg p-8">
             <LeadForm />

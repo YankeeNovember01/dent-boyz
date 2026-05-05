@@ -475,7 +475,7 @@ export default function PaintlessDentRepairPage() {
           <div className="text-center mb-10">
             <h2 className="text-3xl font-extrabold text-dark-text mb-3">Get Your Free Estimate</h2>
             <p className="text-gray-600">
-              A Dent Boyz specialist will contact you within 1 business hour.
+              A Dent Boyz specialist will contact you within 1 business day.
             </p>
           </div>
           <div className="bg-white rounded-2xl shadow-lg p-8">
