@@ -1,7 +1,7 @@
 import type { Metadata } from 'next';
 import { notFound } from 'next/navigation';
 import Link from 'next/link';
-import { CITIES, getCityBySlug, getNearbyCities } from '@/lib/cities';
+import { CITIES, getCityBySlug, getNearbyCities, getCityContent } from '@/lib/cities';
 import CTABlock from '@/components/CTABlock';
 import LeadForm from '@/components/LeadForm';
 import SchemaMarkup from '@/components/SchemaMarkup';
@@ -18,8 +18,10 @@ export async function generateStaticParams() {
 export async function generateMetadata({ params }: Props): Promise<Metadata> {
   const city = getCityBySlug(params.city);
   if (!city) return {};
+  const cityContent = getCityContent(params.city);
+  const primaryKeyword = cityContent?.primaryKeyword || `hail damage repair ${city.name} TX`;
   return {
-    title: `Hail Damage Repair in ${city.name}, TX | Dent Boyz`,
+    title: `${primaryKeyword.charAt(0).toUpperCase() + primaryKeyword.slice(1)} | Dent Boyz`,
     description: `Expert auto hail damage repair in ${city.name}, TX — ${city.angle}. Free inspection, deductible assistance, insurance direct billing. Call Dent Boyz at (214) 555-0100.`,
     alternates: { canonical: `https://dent-boyz.com/hail-damage-repair/${params.city}` },
   };
@@ -57,6 +59,7 @@ export default function CityPage({ params }: Props) {
 
   const nearbyCities = getNearbyCities(city.slug, 5);
   const faqItems = buildCityFAQ(city);
+  const cityContent = getCityContent(params.city);
 
   const breadcrumbSchema = {
     '@context': 'https://schema.org',
@@ -114,8 +117,13 @@ export default function CityPage({ params }: Props) {
     areaServed: `${city.name}, TX`,
   };
 
+  const allFaqItems = [
+    ...faqItems,
+    ...(cityContent?.faqs.map(f => ({ question: f.q, answer: f.a })) ?? []),
+  ];
+
   const faqSchema = {
-    mainEntity: faqItems.map((item) => ({
+    mainEntity: allFaqItems.map((item) => ({
       '@type': 'Question',
       name: item.question,
       acceptedAnswer: {
@@ -164,6 +172,15 @@ export default function CityPage({ params }: Props) {
         </div>
       </section>
 
+      {/* CITY-SPECIFIC INTRO */}
+      {cityContent && (
+        <section className="py-12 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <p className="text-lg text-gray-700 leading-relaxed">{cityContent.introParagraph}</p>
+          </div>
+        </section>
+      )}
+
       {/* INTRO */}
       <section className="py-16 px-4 bg-white">
         <div className="container-xl max-w-4xl">
@@ -203,6 +220,32 @@ export default function CityPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* CITY-SPECIFIC SECTIONS */}
+      {cityContent && (
+        <>
+          <section className="py-12 bg-gray-50">
+            <div className="max-w-4xl mx-auto px-4">
+              <h2 className="text-2xl font-bold text-[#0a1628] mb-4">Hail History in {city.name}</h2>
+              <p className="text-gray-700">{cityContent.localStormContext}</p>
+            </div>
+          </section>
+
+          <section className="py-12 bg-white">
+            <div className="max-w-4xl mx-auto px-4">
+              <h2 className="text-2xl font-bold text-[#0a1628] mb-4">Vehicle Types We Serve in {city.name}</h2>
+              <p className="text-gray-700">{cityContent.vehicleAngle}</p>
+            </div>
+          </section>
+
+          <section className="py-12 bg-gray-50">
+            <div className="max-w-4xl mx-auto px-4">
+              <h2 className="text-2xl font-bold text-[#0a1628] mb-4">Insurance Claims in {city.name}</h2>
+              <p className="text-gray-700">{cityContent.insuranceAngle}</p>
+            </div>
+          </section>
+        </>
+      )}
 
       {/* WHY CHOOSE DENT BOYZ */}
       <section className="py-16 px-4 bg-light-gray">
@@ -342,6 +385,23 @@ export default function CityPage({ params }: Props) {
           </div>
         </div>
       </section>
+
+      {/* CITY-SPECIFIC FAQS */}
+      {cityContent && cityContent.faqs.length > 0 && (
+        <section className="py-12 bg-white">
+          <div className="max-w-4xl mx-auto px-4">
+            <h2 className="text-2xl font-bold text-[#0a1628] mb-6">Frequently Asked Questions — {city.name} Hail Damage</h2>
+            <div className="space-y-6">
+              {cityContent.faqs.map((faq, i) => (
+                <div key={i} className="border-b border-gray-200 pb-6">
+                  <h3 className="text-lg font-semibold text-[#0a1628] mb-2">{faq.q}</h3>
+                  <p className="text-gray-700">{faq.a}</p>
+                </div>
+              ))}
+            </div>
+          </div>
+        </section>
+      )}
 
       {/* FAQ */}
       <section className="py-16 px-4 bg-white">
