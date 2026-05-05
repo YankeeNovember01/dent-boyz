@@ -103,17 +103,17 @@ export default function FreeHailDamageInspectionPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                icon: '📊',
+                icon: '',
                 title: 'Know if it\'s worth filing',
                 desc: 'If damage is minor, filing a claim may not make sense — your deductible might exceed the repair cost, and multiple claims can affect your rates. An independent assessment tells you what you\'re actually dealing with first.',
               },
               {
-                icon: '💪',
+                icon: '',
                 title: 'Leverage with the adjuster',
                 desc: 'Insurance adjusters are trained to minimize payouts. An independent damage documentation from us gives you a baseline — if the adjuster\'s estimate comes in low, you have something to push back with.',
               },
               {
-                icon: '🔍',
+                icon: '',
                 title: 'Know exactly what\'s damaged',
                 desc: 'You\'ll know every panel, every dent, every piece of trim — before anyone else tells you. No surprises. No being misled about the scope of damage.',
               },
@@ -144,15 +144,15 @@ export default function FreeHailDamageInspectionPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-4">
               {[
-                { label: 'Hood', icon: '🚗' },
-                { label: 'Roof', icon: '🏠' },
-                { label: 'Trunk / Decklid', icon: '📦' },
-                { label: 'All four doors', icon: '🚪' },
-                { label: 'Front and rear fenders', icon: '🔧' },
-                { label: 'Quarter panels', icon: '📐' },
-                { label: 'Windshield & sunroof', icon: '🪟' },
-                { label: 'Side mirrors', icon: '🪞' },
-                { label: 'Trim & plastic components', icon: '⚙️' },
+                { label: 'Hood', icon: '' },
+                { label: 'Roof', icon: '' },
+                { label: 'Trunk / Decklid', icon: '' },
+                { label: 'All four doors', icon: '' },
+                { label: 'Front and rear fenders', icon: '' },
+                { label: 'Quarter panels', icon: '' },
+                { label: 'Windshield & sunroof', icon: '' },
+                { label: 'Side mirrors', icon: '' },
+                { label: 'Trim & plastic components', icon: '' },
               ].map((item) => (
                 <div key={item.label} className="flex items-center gap-3 bg-light-gray rounded-lg px-4 py-3 text-sm">
                   <span>{item.icon}</span>
@@ -162,7 +162,7 @@ export default function FreeHailDamageInspectionPage() {
             </div>
             <div className="mt-6 bg-navy/5 border border-navy/10 rounded-xl p-4">
               <p className="text-dark-text text-sm font-medium">
-                🔦 <strong>We use specialized lighting</strong> to reveal dents that are completely
+                 <strong>We use specialized lighting</strong> to reveal dents that are completely
                 invisible in normal daylight. Many vehicles have 30–50% more damage than the owner
                 realized before our inspection.
               </p>
@@ -177,10 +177,10 @@ export default function FreeHailDamageInspectionPage() {
           <h2 className="text-3xl font-extrabold text-dark-text mb-8">What You Get After Your Inspection</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: '📋', title: 'Panel-by-panel damage summary', desc: 'Every dent documented — location, size, depth. Written and photographed.' },
-              { icon: '🔧', title: 'Repair recommendation', desc: 'We tell you what\'s a PDR candidate, what might need a body shop, and what can be left alone.' },
-              { icon: '💵', title: 'Cost estimate', desc: 'Out-of-pocket pricing AND estimated insurance coverage — so you can compare both paths before deciding.' },
-              { icon: '🤝', title: 'Honest claim recommendation', desc: 'Should you file? We\'ll give you our honest take based on your deductible, damage scope, and typical claim outcomes for your insurer.' },
+              { icon: '', title: 'Panel-by-panel damage summary', desc: 'Every dent documented — location, size, depth. Written and photographed.' },
+              { icon: '', title: 'Repair recommendation', desc: 'We tell you what\'s a PDR candidate, what might need a body shop, and what can be left alone.' },
+              { icon: '', title: 'Cost estimate', desc: 'Out-of-pocket pricing AND estimated insurance coverage — so you can compare both paths before deciding.' },
+              { icon: '', title: 'Honest claim recommendation', desc: 'Should you file? We\'ll give you our honest take based on your deductible, damage scope, and typical claim outcomes for your insurer.' },
             ].map((item) => (
               <div key={item.title} className="flex gap-4 bg-light-gray rounded-xl p-6">
                 <div className="text-2xl flex-shrink-0">{item.icon}</div>
@@ -201,19 +201,19 @@ export default function FreeHailDamageInspectionPage() {
           <div className="bg-white rounded-xl p-8">
             <div className="space-y-4 text-gray-600">
               <p className="flex items-start gap-3">
-                <span className="text-green-500 font-bold text-lg mt-0.5">✓</span>
+                <span className="text-green-500 font-bold text-lg mt-0.5"></span>
                 <span>We don&apos;t push you into repairs — if the damage is minor and not worth fixing, we&apos;ll tell you that directly.</span>
               </p>
               <p className="flex items-start gap-3">
-                <span className="text-green-500 font-bold text-lg mt-0.5">✓</span>
+                <span className="text-green-500 font-bold text-lg mt-0.5"></span>
                 <span>We don&apos;t push you into filing a claim — sometimes the smart move is to pay out of pocket. We&apos;ll tell you when that&apos;s true.</span>
               </p>
               <p className="flex items-start gap-3">
-                <span className="text-green-500 font-bold text-lg mt-0.5">✓</span>
+                <span className="text-green-500 font-bold text-lg mt-0.5"></span>
                 <span>If you decide to go elsewhere after the inspection, that&apos;s completely fine. We just want you to make an informed decision.</span>
               </p>
               <p className="flex items-start gap-3">
-                <span className="text-green-500 font-bold text-lg mt-0.5">✓</span>
+                <span className="text-green-500 font-bold text-lg mt-0.5"></span>
                 <span>The inspection is free because we believe in earning your business through honesty — not locking you in before you have information.</span>
               </p>
             </div>
@@ -228,19 +228,19 @@ export default function FreeHailDamageInspectionPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                icon: '📞',
+                icon: '',
                 title: 'Call or Text',
                 desc: '(214) 555-0100',
                 action: <a href="tel:2145550100" className="inline-block mt-3 bg-navy text-white font-bold px-5 py-2 rounded-lg text-sm hover:bg-navy/90 transition-colors">Call Now</a>,
               },
               {
-                icon: '📝',
+                icon: '',
                 title: 'Fill Out the Form',
                 desc: 'Use the form below — we\'ll reach out same day within 1 business hour.',
                 action: null,
               },
               {
-                icon: '🚗',
+                icon: '',
                 title: 'Mobile Inspection',
                 desc: 'We come to your home or office across most of North Dallas. No drop-off required.',
                 action: null,

@@ -128,6 +128,19 @@ const faqSchema = {
   })),
 };
 
+const insuranceCarriers = [
+  'State Farm', 'USAA', 'Allstate', 'Progressive',
+  'Farmers', 'GEICO', 'Liberty Mutual', 'Nationwide',
+];
+
+const quickTimeline = [
+  { step: '1', label: 'Free Inspection', desc: '30–45 min. No obligation.' },
+  { step: '2', label: 'We File Your Claim', desc: 'We handle all paperwork.' },
+  { step: '3', label: 'Adjuster Review', desc: 'We attend with you.' },
+  { step: '4', label: 'Repair Begins', desc: '1–5 business days.' },
+  { step: '5', label: 'Insurance Pays Us', desc: 'You pay $0 in most cases.' },
+];
+
 export default function InsuranceClaimsPage() {
   return (
     <>
@@ -137,6 +150,7 @@ export default function InsuranceClaimsPage() {
       {/* HERO */}
       <section className="bg-navy text-white py-20 px-4">
         <div className="container-xl max-w-3xl">
+          <div className="w-12 h-0.5 bg-gold mb-6"></div>
           <h1 className="text-4xl md:text-5xl font-extrabold leading-tight mb-6">
             Auto Hail Insurance Claims in Texas —{' '}
             <span className="text-gold">Step-by-Step Guide</span>
@@ -153,6 +167,67 @@ export default function InsuranceClaimsPage() {
             <a href="tel:2145550100" className="btn-outline-white text-lg px-8 py-4 text-center">
               Call (214) 555-0100
             </a>
+          </div>
+        </div>
+      </section>
+
+      {/* WHAT TO EXPECT TIMELINE */}
+      <section className="w-full bg-light-gray py-16 px-4">
+        <div className="container-xl max-w-4xl">
+          <div className="mb-10">
+            <div className="w-12 h-0.5 bg-gold mb-4"></div>
+            <h2 className="text-3xl font-extrabold text-dark-text">What to Expect — The Full Process</h2>
+            <p className="text-gray-600 mt-2">From first call to vehicle pickup, here is exactly what happens.</p>
+          </div>
+          <div className="relative">
+            {/* Vertical line */}
+            <div className="absolute left-6 top-0 bottom-0 w-0.5 bg-gold/30 hidden md:block"></div>
+            <div className="space-y-0">
+              {quickTimeline.map((item, i) => (
+                <div key={item.step} className="flex gap-6 relative">
+                  <div className="flex-shrink-0 w-12 h-12 bg-navy text-gold font-extrabold flex items-center justify-center text-sm z-10">
+                    {item.step}
+                  </div>
+                  <div className="flex-1 bg-white border border-gray-100 p-5 mb-2">
+                    <h3 className="font-extrabold text-dark-text text-sm uppercase tracking-wide mb-1">{item.label}</h3>
+                    <p className="text-gray-600 text-sm">{item.desc}</p>
+                  </div>
+                </div>
+              ))}
+            </div>
+          </div>
+
+          {/* Rental + Deductible callouts */}
+          <div className="grid md:grid-cols-2 gap-6 mt-10">
+            <div className="bg-navy text-white p-8 border-l-4 border-gold">
+              <h3 className="font-extrabold text-gold text-lg mb-3">Rental Vehicle</h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                If your repair takes more than one day, we coordinate a rental vehicle through your insurance.
+                Most comprehensive policies cover rentals during active repairs. We handle all arrangements —
+                you&apos;re never without a vehicle.
+              </p>
+            </div>
+            <div className="bg-navy text-white p-8 border-l-4 border-gold">
+              <h3 className="font-extrabold text-gold text-lg mb-3">Deductible Assistance</h3>
+              <p className="text-gray-300 text-sm leading-relaxed">
+                Texas comprehensive coverage typically covers hail damage in full. Through our deductible
+                assistance program, the majority of our customers pay $0 out of pocket. We tell you upfront
+                exactly what to expect — no surprises.
+              </p>
+            </div>
+          </div>
+
+          {/* Carrier grid */}
+          <div className="mt-10">
+            <h3 className="font-extrabold text-dark-text mb-4 uppercase tracking-wide text-sm">We Work With Every Major Texas Insurer</h3>
+            <div className="grid grid-cols-2 md:grid-cols-4 gap-3">
+              {insuranceCarriers.map((carrier) => (
+                <div key={carrier} className="bg-navy text-white text-center py-4 px-3">
+                  <span className="font-bold text-xs uppercase tracking-wide">{carrier}</span>
+                </div>
+              ))}
+            </div>
+            <p className="text-gray-500 text-xs mt-3">Don&apos;t see your carrier? We work with all Texas comprehensive insurers. <a href="tel:2145550100" className="text-gold hover:underline">Call us.</a></p>
           </div>
         </div>
       </section>
@@ -212,7 +287,7 @@ export default function InsuranceClaimsPage() {
           </h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-green-50 border border-green-200 rounded-xl p-6">
-              <h3 className="font-bold text-green-800 text-xl mb-4">✅ What We Can Do</h3>
+              <h3 className="font-bold text-green-800 text-xl mb-4">What We Can Do</h3>
               <ul className="space-y-3 text-green-700">
                 {[
                   'Attend the adjuster\'s inspection with you',
@@ -232,7 +307,7 @@ export default function InsuranceClaimsPage() {
               </ul>
             </div>
             <div className="bg-red-50 border border-red-200 rounded-xl p-6">
-              <h3 className="font-bold text-red-800 text-xl mb-4">❌ What We Cannot Do</h3>
+              <h3 className="font-bold text-red-800 text-xl mb-4">What We Cannot Do</h3>
               <ul className="space-y-3 text-red-700">
                 {[
                   'Claim more damage than actually exists',

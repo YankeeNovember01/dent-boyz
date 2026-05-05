@@ -24,7 +24,7 @@ export default function Nav() {
       <div className="container-xl flex items-center justify-between py-4">
         {/* Logo */}
         <Link href="/" className="flex items-center gap-2 text-white font-extrabold text-xl tracking-tight hover:text-gold transition-colors">
-          🚗 DENT BOYZ
+          DENT BOYZ
         </Link>
 
         {/* Desktop Nav */}
@@ -54,7 +54,7 @@ export default function Nav() {
             </button>
 
             {servicesOpen && (
-              <div className="absolute left-0 top-full mt-1 w-64 bg-white rounded-xl shadow-xl border border-gray-100 overflow-hidden z-50">
+              <div className="absolute left-0 top-full mt-1 w-64 bg-white shadow-xl border border-gray-100 overflow-hidden z-50">
                 {serviceLinks.map((link) => (
                   <Link
                     key={link.href}
@@ -75,7 +75,7 @@ export default function Nav() {
           <Link href="/reviews" className="hover:text-gold transition-colors">Reviews</Link>
           <span className="text-gray-400">|</span>
           <a href="tel:2145550100" className="text-electric-blue hover:text-gold transition-colors font-semibold">(214) 555-0100</a>
-          <Link href="/free-estimate" className="bg-gold text-navy font-bold px-4 py-2 rounded-lg hover:bg-gold-dark transition-colors text-sm">
+          <Link href="/free-estimate" className="bg-gold text-navy font-bold px-4 py-2 hover:bg-gold-dark transition-colors text-sm">
             Free Inspection
           </Link>
         </nav>
@@ -113,7 +113,7 @@ export default function Nav() {
           </button>
 
           {mobileServicesOpen && (
-            <div className="bg-navy/50 rounded-lg overflow-hidden mb-1">
+            <div className="bg-navy/50 overflow-hidden mb-1">
               {serviceLinks.map((link) => (
                 <Link
                   key={link.href}
@@ -134,7 +134,7 @@ export default function Nav() {
           <a href="tel:2145550100" className="py-2 text-electric-blue font-semibold">(214) 555-0100</a>
           <Link
             href="/free-estimate"
-            className="bg-gold text-navy font-bold px-4 py-3 rounded-lg text-center hover:bg-gold-dark transition-colors mt-2"
+            className="bg-gold text-navy font-bold px-4 py-3 text-center hover:bg-gold-dark transition-colors mt-2"
             onClick={() => setMenuOpen(false)}
           >
             Free Inspection

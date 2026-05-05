@@ -107,9 +107,9 @@ export default function LeaseReturnDentRepairPage() {
             </p>
             <div className="space-y-4">
               {[
-                { icon: '💰', title: '$300–$800+ per dent', desc: 'Dealers bill excess wear and tear at retail body shop rates — not PDR rates. Every flagged dent adds up fast.' },
-                { icon: '🔍', title: 'Third-party inspection companies', desc: 'AutoVin, AACC, and similar companies inspect returned vehicles and flag everything. They\'re thorough by design — their job is to find every billable item.' },
-                { icon: '📬', title: 'The surprise bill arrives weeks later', desc: 'You return the car, feel fine about it, then get a $1,200 charge in the mail 3–4 weeks later. No negotiation. No second chances.' },
+                { icon: '', title: '$300–$800+ per dent', desc: 'Dealers bill excess wear and tear at retail body shop rates — not PDR rates. Every flagged dent adds up fast.' },
+                { icon: '', title: 'Third-party inspection companies', desc: 'AutoVin, AACC, and similar companies inspect returned vehicles and flag everything. They\'re thorough by design — their job is to find every billable item.' },
+                { icon: '', title: 'The surprise bill arrives weeks later', desc: 'You return the car, feel fine about it, then get a $1,200 charge in the mail 3–4 weeks later. No negotiation. No second chances.' },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 bg-white rounded-xl p-5">
                   <div className="text-2xl flex-shrink-0">{item.icon}</div>
@@ -141,14 +141,14 @@ export default function LeaseReturnDentRepairPage() {
                 'Dents near panel edges or body lines — flagged because they\'re harder to repair and more visible',
               ].map((item) => (
                 <li key={item} className="flex items-start gap-3">
-                  <span className="text-red-500 font-bold mt-0.5">⚠️</span>
+                  <span className="text-red-500 font-bold mt-0.5">~</span>
                   <span>{item}</span>
                 </li>
               ))}
             </ul>
             <div className="mt-6 bg-gold/10 border border-gold/30 rounded-xl p-4">
               <p className="text-dark-text font-medium text-sm">
-                💡 <strong>Know what they&apos;ll charge for before you hand over the keys.</strong> Our free
+                 <strong>Know what they&apos;ll charge for before you hand over the keys.</strong> Our free
                 inspection walks through your vehicle the same way an AutoVin inspector would.
               </p>
             </div>
@@ -163,8 +163,8 @@ export default function LeaseReturnDentRepairPage() {
           <div className="grid md:grid-cols-2 gap-8">
             <div className="space-y-4">
               {[
-                { icon: '📉', title: '30–50% of dealer cost', desc: 'Our repair pricing is significantly below what dealers charge at lease return. We use PDR — they use body shop rates.' },
-                { icon: '✅', title: 'You return with a clean inspection', desc: 'A quality PDR repair passes the credit-card test every time. The dent is gone. Nothing to flag.' },
+                { icon: '', title: '30–50% of dealer cost', desc: 'Our repair pricing is significantly below what dealers charge at lease return. We use PDR — they use body shop rates.' },
+                { icon: 'YES', title: 'You return with a clean inspection', desc: 'A quality PDR repair passes the credit-card test every time. The dent is gone. Nothing to flag.' },
               ].map((item) => (
                 <div key={item.title} className="flex gap-4 bg-light-gray rounded-xl p-6">
                   <div className="text-2xl flex-shrink-0">{item.icon}</div>

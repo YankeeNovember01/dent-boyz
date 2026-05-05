@@ -160,10 +160,10 @@ function Post1() {
   }
 
   const comparisonRows = [
-    { scenario: '$3,000 hail damage, $500 deductible, no recent claims', verdict: '✅ Yes — $2,500 covered, low rate risk' },
-    { scenario: '$800 hail damage, $1,000 deductible', verdict: '❌ No — damage is less than deductible' },
-    { scenario: '$1,500 damage, $500 deductible, filed 2 claims last year', verdict: '⚠️ Maybe — get an inspection and weigh it' },
-    { scenario: '$5,000 damage, $2,500 deductible, great claim history', verdict: '✅ Probably yes — still $2,500 covered' },
+    { scenario: '$3,000 hail damage, $500 deductible, no recent claims', verdict: 'YES Yes — $2,500 covered, low rate risk' },
+    { scenario: '$800 hail damage, $1,000 deductible', verdict: 'NO No — damage is less than deductible' },
+    { scenario: '$1,500 damage, $500 deductible, filed 2 claims last year', verdict: '~ Maybe — get an inspection and weigh it' },
+    { scenario: '$5,000 damage, $2,500 deductible, great claim history', verdict: 'YES Probably yes — still $2,500 covered' },
   ]
 
   return (
@@ -307,11 +307,11 @@ function Post1() {
 
 function Post2() {
   const comparisonRows = [
-    { factor: 'Factory paint preserved', pdr: '✅ Always', shop: '❌ Repainted' },
+    { factor: 'Factory paint preserved', pdr: 'YES Always', shop: 'NO Repainted' },
     { factor: 'Resale value impact', pdr: 'Minimal', shop: 'Can reduce 10–20%' },
     { factor: 'Repair time', pdr: '1–5 days', shop: '1–3 weeks' },
     { factor: 'Cost (out of pocket)', pdr: 'Lower', shop: 'Higher' },
-    { factor: 'Insurance coverage', pdr: '✅ Comprehensive', shop: '✅ Comprehensive' },
+    { factor: 'Insurance coverage', pdr: 'YES Comprehensive', shop: 'YES Comprehensive' },
     { factor: 'Paint match risk', pdr: 'None', shop: 'Color mismatch possible' },
     { factor: 'Warranty', pdr: 'Lifetime (Dent Boyz)', shop: 'Varies' },
   ]
@@ -587,7 +587,7 @@ function Post3() {
       <ul className={ulClass}>
         {doNots.map((item) => (
           <li key={item} className={liClass}>
-            <span className="text-red-500 mt-1">❌</span>
+            <span className="text-red-500 mt-1">NO</span>
             <span>{item}</span>
           </li>
         ))}
@@ -601,7 +601,7 @@ function Post3() {
               <span className="flex-shrink-0 w-6 h-6 bg-gold text-navy font-bold text-xs rounded-full flex items-center justify-center mt-0.5">
                 {i + 1}
               </span>
-              <span className="text-gray-700">✅ {item}</span>
+              <span className="text-gray-700">YES {item}</span>
             </li>
           ))}
         </ol>

@@ -183,10 +183,10 @@ export default function CreaseRepairPage() {
           </p>
           <div className="space-y-4">
             {[
-              { icon: '✅', label: 'Minor / shallow creases', verdict: 'Yes', desc: 'Shallow creases with intact paint on flat panel areas are strong PDR candidates. Full correction is typically achievable.' },
-              { icon: '✅', label: 'Moderate creases on flat panels', verdict: 'Usually', desc: 'With time and care, moderate creases on doors, fenders, or hoods often correct to near-factory. Some may show a very faint trace under harsh raking light.' },
-              { icon: '⚠️', label: 'Deep creases on body lines', verdict: 'Sometimes', desc: 'When a crease hits a body line (the styled edges built into the panel design), the geometry makes correction harder. We\'ll be honest about realistic outcomes.' },
-              { icon: '❌', label: 'Creases with broken paint', verdict: 'Needs body shop', desc: 'If the paint has cracked, chipped, or flaked along the crease, PDR alone can\'t restore the panel. A body shop repaint is needed after or instead of PDR.' },
+              { icon: 'YES', label: 'Minor / shallow creases', verdict: 'Yes', desc: 'Shallow creases with intact paint on flat panel areas are strong PDR candidates. Full correction is typically achievable.' },
+              { icon: 'YES', label: 'Moderate creases on flat panels', verdict: 'Usually', desc: 'With time and care, moderate creases on doors, fenders, or hoods often correct to near-factory. Some may show a very faint trace under harsh raking light.' },
+              { icon: '~', label: 'Deep creases on body lines', verdict: 'Sometimes', desc: 'When a crease hits a body line (the styled edges built into the panel design), the geometry makes correction harder. We\'ll be honest about realistic outcomes.' },
+              { icon: 'NO', label: 'Creases with broken paint', verdict: 'Needs body shop', desc: 'If the paint has cracked, chipped, or flaked along the crease, PDR alone can\'t restore the panel. A body shop repaint is needed after or instead of PDR.' },
             ].map((item) => (
               <div key={item.label} className="flex gap-4 bg-light-gray rounded-xl p-6">
                 <div className="text-2xl flex-shrink-0">{item.icon}</div>

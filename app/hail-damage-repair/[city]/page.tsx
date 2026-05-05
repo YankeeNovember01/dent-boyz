@@ -212,32 +212,32 @@ export default function CityPage({ params }: Props) {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                icon: '📱',
+                icon: '',
                 title: `Mobile Service Throughout ${city.name}`,
                 desc: `We come to your home in ${city.neighborhoods} or your office. No need to disrupt your schedule to drop off your car. Our mobile PDR technicians serve all of ${city.name} and surrounding areas.`,
               },
               {
-                icon: '📋',
+                icon: '',
                 title: 'Insurance Handled Completely',
                 desc: `We manage the entire insurance process — inspection documentation, adjuster coordination, supplemental claims, and direct billing to your insurer. ${city.profile.includes('State Farm') ? 'With State Farm\'s presence in this area, we know exactly how to navigate their process.' : 'We work with every major Texas insurer.'}`,
               },
               {
-                icon: '💳',
+                icon: '',
                 title: 'Deductible Assistance Available',
                 desc: 'Ask about our deductible assistance program. Depending on your situation and policy, we may be able to reduce or eliminate your out-of-pocket cost entirely.',
               },
               {
-                icon: '🛡️',
+                icon: '',
                 title: 'Lifetime Warranty on All Repairs',
                 desc: `Every PDR repair performed in ${city.name} comes with a lifetime warranty. If a repaired dent ever reappears, we fix it for free — no questions asked.`,
               },
               {
-                icon: '⚡',
+                icon: '',
                 title: '1–3 Day Turnaround',
                 desc: `Most ${city.name} hail damage repairs are completed in 1–3 business days. We know you need your vehicle — we work efficiently without cutting corners.`,
               },
               {
-                icon: '🔍',
+                icon: '',
                 title: 'Honest, Transparent Assessments',
                 desc: `We give honest assessments. If your vehicle isn't a perfect PDR candidate, we'll tell you. We only take jobs we can complete to factory standard — that's why our reviews are consistently 5 stars.`,
               },

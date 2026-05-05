@@ -216,14 +216,14 @@ export default function HailDamageRepairPage() {
                 </thead>
                 <tbody>
                   {[
-                    ['Factory Paint', '✅ 100% preserved', '❌ Sanded & repainted'],
-                    ['Repair Time', '✅ 1–3 days', '❌ 2–4 weeks'],
-                    ['Cost', '✅ Lower (insurance preferred)', '❌ Higher'],
-                    ['Resale Value', '✅ Fully maintained', '❌ Reduced (repaint noted on Carfax)'],
-                    ['Warranty', '✅ Lifetime warranty', '⚠️ Varies by shop'],
-                    ['Insurance', '✅ Direct billing, all major insurers', '⚠️ May require multiple estimates'],
-                    ['2020+ Vehicles', '✅ Ideal for advanced paint systems', '❌ Risk of paint matching issues'],
-                    ['Quality', '✅ Factory original result', '⚠️ Slightly different under certain lighting'],
+                    ['Factory Paint', 'YES 100% preserved', 'NO Sanded & repainted'],
+                    ['Repair Time', 'YES 1–3 days', 'NO 2–4 weeks'],
+                    ['Cost', 'YES Lower (insurance preferred)', 'NO Higher'],
+                    ['Resale Value', 'YES Fully maintained', 'NO Reduced (repaint noted on Carfax)'],
+                    ['Warranty', 'YES Lifetime warranty', '~ Varies by shop'],
+                    ['Insurance', 'YES Direct billing, all major insurers', '~ May require multiple estimates'],
+                    ['2020+ Vehicles', 'YES Ideal for advanced paint systems', 'NO Risk of paint matching issues'],
+                    ['Quality', 'YES Factory original result', '~ Slightly different under certain lighting'],
                   ].map(([factor, pdr, shop]) => (
                     <tr key={factor} className="border-b border-gray-100 hover:bg-gray-50">
                       <td className="py-3 px-6 font-medium text-dark-text">{factor}</td>
@@ -305,12 +305,12 @@ export default function HailDamageRepairPage() {
           <h2 className="text-3xl font-extrabold text-dark-text mb-8">Why Choose Dent Boyz</h2>
           <div className="grid md:grid-cols-2 gap-6">
             {[
-              { icon: '🏆', title: '500+ Vehicles Restored', desc: 'We\'ve repaired hundreds of hail-damaged vehicles across North Dallas. Our experience means your car is in expert hands.' },
-              { icon: '⭐', title: '5-Star Rated Service', desc: 'Our customers consistently rate us 5 stars for quality, communication, and professionalism. Read our reviews to see what North Dallas drivers say.' },
-              { icon: '🛡️', title: 'Lifetime Warranty', desc: 'Every PDR repair we perform comes with a lifetime warranty. If a repaired dent ever reappears, we fix it for free — period.' },
-              { icon: '📱', title: 'Mobile Service Available', desc: 'We can come to your home, office, or dealership in most North Dallas cities. Get your car repaired without disrupting your schedule.' },
-              { icon: '💳', title: 'Insurance Direct Billing', desc: 'We bill your insurance directly and handle all the paperwork. You deal with us — not the insurance company.' },
-              { icon: '🔍', title: 'Honest Assessments', desc: 'If your vehicle isn\'t a good PDR candidate, we\'ll tell you. We don\'t take jobs we can\'t complete to factory standard.' },
+              { icon: '', title: '500+ Vehicles Restored', desc: 'We\'ve repaired hundreds of hail-damaged vehicles across North Dallas. Our experience means your car is in expert hands.' },
+              { icon: '', title: '5-Star Rated Service', desc: 'Our customers consistently rate us 5 stars for quality, communication, and professionalism. Read our reviews to see what North Dallas drivers say.' },
+              { icon: '', title: 'Lifetime Warranty', desc: 'Every PDR repair we perform comes with a lifetime warranty. If a repaired dent ever reappears, we fix it for free — period.' },
+              { icon: '', title: 'Mobile Service Available', desc: 'We can come to your home, office, or dealership in most North Dallas cities. Get your car repaired without disrupting your schedule.' },
+              { icon: '', title: 'Insurance Direct Billing', desc: 'We bill your insurance directly and handle all the paperwork. You deal with us — not the insurance company.' },
+              { icon: '', title: 'Honest Assessments', desc: 'If your vehicle isn\'t a good PDR candidate, we\'ll tell you. We don\'t take jobs we can\'t complete to factory standard.' },
             ].map((item) => (
               <div key={item.title} className="flex gap-4">
                 <div className="text-3xl flex-shrink-0">{item.icon}</div>

@@ -26,7 +26,7 @@ export default function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-10">
           {/* Brand */}
           <div>
-            <div className="text-white font-extrabold text-xl mb-2">🚗 DENT BOYZ</div>
+            <div className="text-white font-extrabold text-xl mb-2">DENT BOYZ</div>
             <p className="text-gray-400 text-sm mb-4">North Dallas&apos; Trusted Hail Damage Repair Experts</p>
             <address className="not-italic text-sm text-gray-400 space-y-1">
               <div itemProp="address" itemScope itemType="https://schema.org/PostalAddress">

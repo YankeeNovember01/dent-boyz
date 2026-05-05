@@ -128,11 +128,11 @@ export default function MotorcycleDentRepairPage() {
           <h2 className="text-3xl font-extrabold text-dark-text mb-8">What We Can Fix on Motorcycles</h2>
           <div className="space-y-4">
             {[
-              { icon: '✅', label: 'Gas tanks (steel)', desc: 'Our primary motorcycle service. Steel tanks respond excellently to PDR when paint is intact. We restore dents to factory smooth.' },
-              { icon: '✅', label: 'Steel fenders (front and rear)', desc: 'Steel fenders on classic and modern bikes — same PDR approach as automotive panels.' },
-              { icon: '✅', label: 'Chrome / painted steel panels', desc: 'Side covers, battery boxes, and other steel body panels. Care required with chrome — we assess each case.' },
-              { icon: '❌', label: 'Plastic fairings', desc: 'PDR doesn\'t apply to plastic fairings or body panels. Plastic requires heat-forming or replacement — we can refer you to a specialist.' },
-              { icon: '❌', label: 'Carbon fiber', desc: 'Carbon fiber requires specialized composite repair. Not a PDR application.' },
+              { icon: 'YES', label: 'Gas tanks (steel)', desc: 'Our primary motorcycle service. Steel tanks respond excellently to PDR when paint is intact. We restore dents to factory smooth.' },
+              { icon: 'YES', label: 'Steel fenders (front and rear)', desc: 'Steel fenders on classic and modern bikes — same PDR approach as automotive panels.' },
+              { icon: 'YES', label: 'Chrome / painted steel panels', desc: 'Side covers, battery boxes, and other steel body panels. Care required with chrome — we assess each case.' },
+              { icon: 'NO', label: 'Plastic fairings', desc: 'PDR doesn\'t apply to plastic fairings or body panels. Plastic requires heat-forming or replacement — we can refer you to a specialist.' },
+              { icon: 'NO', label: 'Carbon fiber', desc: 'Carbon fiber requires specialized composite repair. Not a PDR application.' },
             ].map((item) => (
               <div key={item.label} className="flex gap-4 bg-white rounded-xl p-6">
                 <div className="text-2xl flex-shrink-0">{item.icon}</div>
@@ -153,8 +153,8 @@ export default function MotorcycleDentRepairPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               { icon: '🅿️', title: 'Tipped Over in Parking', desc: 'The most common. A bike that tips in a parking lot lands on the tank first — classic PDR scenario.' },
-              { icon: '🏍️', title: 'Minor Drops', desc: 'Low-speed drops during slow maneuvers, u-turns, or at stops. Usually localized, shallow dents — great PDR candidates.' },
-              { icon: '📦', title: 'Storage Contact', desc: 'Garage shelving, another bike, or a tool hitting the tank during storage. Often noticed weeks after it happened.' },
+              { icon: '', title: 'Minor Drops', desc: 'Low-speed drops during slow maneuvers, u-turns, or at stops. Usually localized, shallow dents — great PDR candidates.' },
+              { icon: '', title: 'Storage Contact', desc: 'Garage shelving, another bike, or a tool hitting the tank during storage. Often noticed weeks after it happened.' },
             ].map((item) => (
               <div key={item.title} className="bg-light-gray rounded-xl p-6">
                 <div className="text-3xl mb-3">{item.icon}</div>

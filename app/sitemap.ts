@@ -21,10 +21,22 @@ export default function sitemap(): MetadataRoute.Sitemap {
       priority: 0.9,
     },
     {
+      url: `${BASE_URL}/paintless-dent-repair`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
+    {
       url: `${BASE_URL}/insurance-claims`,
       lastModified: now,
       changeFrequency: 'monthly',
       priority: 0.8,
+    },
+    {
+      url: `${BASE_URL}/hail-season-dfw`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
     },
     {
       url: `${BASE_URL}/free-estimate`,
@@ -32,8 +44,70 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: 'monthly',
       priority: 0.9,
     },
+    {
+      url: `${BASE_URL}/blog`,
+      lastModified: now,
+      changeFrequency: 'weekly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/about`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/reviews`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    // Service pages
+    {
+      url: `${BASE_URL}/services/door-ding-removal`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/services/crease-repair`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/services/large-dent-repair`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/services/bumper-repair`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.7,
+    },
+    {
+      url: `${BASE_URL}/services/motorcycle-dent-repair`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/services/lease-return-dent-repair`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.6,
+    },
+    {
+      url: `${BASE_URL}/services/free-hail-damage-inspection`,
+      lastModified: now,
+      changeFrequency: 'monthly',
+      priority: 0.8,
+    },
   ];
 
+  // Auto-generate city pages from CITIES array
   const cityPages: MetadataRoute.Sitemap = CITIES.map((city) => ({
     url: `${BASE_URL}/hail-damage-repair/${city.slug}`,
     lastModified: now,
@@ -41,20 +115,13 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.8,
   }));
 
-  const blogPages: MetadataRoute.Sitemap = [
-    {
-      url: `${BASE_URL}/blog`,
-      lastModified: now,
-      changeFrequency: 'weekly' as const,
-      priority: 0.8,
-    },
-    ...POSTS.map((post) => ({
-      url: `${BASE_URL}/blog/${post.slug}`,
-      lastModified: new Date(post.date),
-      changeFrequency: 'monthly' as const,
-      priority: 0.7,
-    })),
-  ];
+  // Auto-generate blog post pages from POSTS array
+  const blogPostPages: MetadataRoute.Sitemap = POSTS.map((post) => ({
+    url: `${BASE_URL}/blog/${post.slug}`,
+    lastModified: new Date(post.date),
+    changeFrequency: 'monthly' as const,
+    priority: 0.6,
+  }));
 
-  return [...staticPages, ...cityPages, ...blogPages];
+  return [...staticPages, ...cityPages, ...blogPostPages];
 }

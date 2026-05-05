@@ -301,7 +301,7 @@ export default function HailSeasonDFWPage() {
 
           <div className="bg-green-50 border border-green-200 rounded-xl p-6">
             <p className="text-green-800 font-semibold">
-              ✅ The good news: even golf-ball-sized hail damage is repairable with PDR in the
+              YES The good news: even golf-ball-sized hail damage is repairable with PDR in the
               majority of cases — as long as the paint is intact.
             </p>
           </div>
@@ -392,22 +392,22 @@ export default function HailSeasonDFWPage() {
           <div className="grid md:grid-cols-2 gap-6 mb-8">
             {[
               {
-                icon: '🏠',
+                icon: '',
                 title: 'Covered Parking',
                 desc: 'Garage, covered lot, or parking structure. The gold standard. A single storm can cost more than a year of covered parking fees.',
               },
               {
-                icon: '🛡️',
+                icon: '',
                 title: 'Hail Car Covers',
                 desc: 'Heavy-duty padded covers exist in the $100–$300 range. Worth it for frequent storms or when garage parking isn\'t available. Look for multi-layer impact resistance.',
               },
               {
-                icon: '📱',
+                icon: '',
                 title: 'Weather Alert Apps',
                 desc: 'Set push alerts for severe thunderstorm warnings and hail watches in your area. An extra 20 minutes of warning can save you thousands.',
               },
               {
-                icon: '🏢',
+                icon: '',
                 title: 'Storage Units',
                 desc: 'Some North Dallas residents keep a second vehicle or seasonal car in a storage unit during peak season (April–June). Surprisingly affordable for peace of mind.',
               },
@@ -444,22 +444,22 @@ export default function HailSeasonDFWPage() {
           <div className="space-y-4 mb-8">
             {[
               {
-                icon: '💧',
+                icon: '',
                 title: 'Micro-cracks in clear coat allow moisture in',
                 desc: 'Even if paint looks intact to the naked eye, the force of hail impact can create micro-fractures in the clear coat. Moisture penetrates these cracks over time, leading to rust that spreads under the paint.',
               },
               {
-                icon: '🔩',
+                icon: '',
                 title: 'Untreated aluminum panels work-harden',
                 desc: 'Aluminum panels that remain dented can work-harden over time, making them more resistant to PDR and increasing the risk of cracking during repair. The window for a clean PDR repair narrows.',
               },
               {
-                icon: '📋',
+                icon: '',
                 title: 'Insurance complications increase',
                 desc: 'Insurance companies can reduce or deny future claims if pre-existing damage isn\'t disclosed. The longer you wait, the harder it is to tie the damage to a specific storm event.',
               },
               {
-                icon: '📉',
+                icon: '',
                 title: 'Resale value keeps dropping',
                 desc: 'Visible dents signal neglect to buyers and dealers. The longer dents are present, the more negotiating leverage they hand to the other party. Fix it now while the damage is current and clean.',
               },
@@ -495,22 +495,22 @@ export default function HailSeasonDFWPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                icon: '🌊',
+                icon: '',
                 title: 'Gulf Moisture Convergence',
                 desc: 'DFW sits at the convergence of warm, humid air from the Gulf of Mexico and cold fronts pushing down from Canada. This is the exact combination that fuels severe supercell thunderstorms capable of producing large hail.',
               },
               {
-                icon: '🏔️',
+                icon: '',
                 title: 'Flat Terrain — No Natural Barriers',
                 desc: "Unlike cities on the coasts or in mountain regions, DFW has no topographic features to break up or weaken storm systems. Storms travel across the plains unimpeded, maintaining their energy.",
               },
               {
-                icon: '📍',
+                icon: '',
                 title: 'Collin County Uplift',
                 desc: 'The slightly elevated terrain of Collin County — where Frisco, McKinney, and Plano sit — creates favorable conditions for atmospheric uplift, which intensifies storm cells and increases hail production.',
               },
               {
-                icon: '📊',
+                icon: '',
                 title: 'The Statistical Reality',
                 desc: 'The result: DFW averages more significant hail events per year than almost any other major US metropolitan area. This is not a once-in-a-decade problem. It happens every spring.',
               },

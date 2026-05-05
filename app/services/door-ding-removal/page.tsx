@@ -195,7 +195,7 @@ export default function DoorDingRemovalPage() {
           </div>
           <div className="bg-gold/10 border border-gold/30 rounded-xl p-6">
             <p className="text-dark-text font-medium">
-              💡 <strong>Final pricing depends on dent size, panel type, and paint condition.</strong> These are typical ranges — get a free inspection for an exact quote. Most door ding jobs come in at the low end.
+               <strong>Final pricing depends on dent size, panel type, and paint condition.</strong> These are typical ranges — get a free inspection for an exact quote. Most door ding jobs come in at the low end.
             </p>
           </div>
         </div>
@@ -211,17 +211,17 @@ export default function DoorDingRemovalPage() {
           <div className="grid md:grid-cols-3 gap-6">
             {[
               {
-                icon: '💰',
+                icon: '',
                 title: 'Resale Value',
                 desc: 'Buyers notice dents — even small ones. A car with multiple door dings will get lowball offers at trade-in and on the private market. A $100 repair now can easily protect $500–$1,000 in resale value.',
               },
               {
-                icon: '🦠',
+                icon: '',
                 title: 'Paint Micro-Cracks',
                 desc: 'Even when paint looks intact, the impact can cause microscopic fractures in the clear coat. Over time, especially in Texas heat, these can expand and allow moisture in — leading to rust.',
               },
               {
-                icon: '😤',
+                icon: '',
                 title: 'It Bothers You',
                 desc: 'You see it every time you walk to your car. It\'s a small thing, but it adds up. Most customers tell us they wished they\'d fixed it sooner.',
               },

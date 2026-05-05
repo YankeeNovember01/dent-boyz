@@ -98,14 +98,14 @@ export default function BumperRepairPage() {
             </p>
             <div className="grid md:grid-cols-2 gap-6 mt-6">
               <div className="bg-white rounded-xl p-6">
-                <h3 className="font-bold text-dark-text mb-3">🔩 Older / Classic Vehicles</h3>
+                <h3 className="font-bold text-dark-text mb-3"> Older / Classic Vehicles</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Vehicles from the 1970s–early 1990s often had chrome or painted steel bumpers.
                   These are true metal panels and respond well to traditional PDR techniques.
                 </p>
               </div>
               <div className="bg-white rounded-xl p-6">
-                <h3 className="font-bold text-dark-text mb-3">🚗 Modern Vehicles (2000+)</h3>
+                <h3 className="font-bold text-dark-text mb-3"> Modern Vehicles (2000+)</h3>
                 <p className="text-gray-600 text-sm leading-relaxed">
                   Plastic bumper covers can be heat-reformed for minor push-in dents. PDR
                   applies to the structural metal reinforcement behind the cover. We assess
@@ -123,10 +123,10 @@ export default function BumperRepairPage() {
           <h2 className="text-3xl font-extrabold text-dark-text mb-8">What Bumper Damage Can We Fix?</h2>
           <div className="space-y-4">
             {[
-              { icon: '✅', label: 'Minor dents with no broken plastic', desc: 'Small push-in dents where the plastic is intact — these are our best candidates. PDR or heat-reforming can restore the shape.' },
-              { icon: '✅', label: 'Minor push-in dents (heat + PDR)', desc: 'Push-in areas where the plastic has flexed but not torn can often be heat-reformed back to shape, sometimes with PDR assistance on the metal structure behind it.' },
-              { icon: '❌', label: 'Cracks or broken plastic', desc: 'Cracks require plastic repair or full bumper replacement. PDR doesn\'t work on broken material. We\'ll tell you this upfront.' },
-              { icon: '❌', label: 'Scratches with paint damage', desc: 'Scratches into the paint or primer need a body shop paint repair. PDR only addresses shape — not paint.' },
+              { icon: 'YES', label: 'Minor dents with no broken plastic', desc: 'Small push-in dents where the plastic is intact — these are our best candidates. PDR or heat-reforming can restore the shape.' },
+              { icon: 'YES', label: 'Minor push-in dents (heat + PDR)', desc: 'Push-in areas where the plastic has flexed but not torn can often be heat-reformed back to shape, sometimes with PDR assistance on the metal structure behind it.' },
+              { icon: 'NO', label: 'Cracks or broken plastic', desc: 'Cracks require plastic repair or full bumper replacement. PDR doesn\'t work on broken material. We\'ll tell you this upfront.' },
+              { icon: 'NO', label: 'Scratches with paint damage', desc: 'Scratches into the paint or primer need a body shop paint repair. PDR only addresses shape — not paint.' },
             ].map((item) => (
               <div key={item.label} className="flex gap-4 bg-white rounded-xl p-6">
                 <div className="text-2xl flex-shrink-0">{item.icon}</div>
@@ -146,27 +146,27 @@ export default function BumperRepairPage() {
           <h2 className="text-3xl font-extrabold text-dark-text mb-8">Bumper Repair vs. Replacement</h2>
           <div className="grid md:grid-cols-2 gap-8">
             <div className="bg-light-gray rounded-xl p-8">
-              <h3 className="text-xl font-bold text-dark-text mb-4">🔧 Repair (When Applicable)</h3>
+              <h3 className="text-xl font-bold text-dark-text mb-4"> Repair (When Applicable)</h3>
               <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">✅</span> Fraction of replacement cost</li>
-                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">✅</span> Same-day turnaround</li>
-                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">✅</span> No paint matching issues</li>
-                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">✅</span> Original bumper stays on the car</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">YES</span> Fraction of replacement cost</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">YES</span> Same-day turnaround</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">YES</span> No paint matching issues</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">YES</span> Original bumper stays on the car</li>
               </ul>
             </div>
             <div className="bg-light-gray rounded-xl p-8">
-              <h3 className="text-xl font-bold text-dark-text mb-4">💸 Replacement (When Needed)</h3>
+              <h3 className="text-xl font-bold text-dark-text mb-4">Replacement (When Needed)</h3>
               <ul className="space-y-3 text-gray-600">
-                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">⚠️</span> $500–$1,500+ installed (parts + paint + labor)</li>
-                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">⚠️</span> 1–3 days in the shop</li>
-                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">⚠️</span> Paint match may not be perfect on older vehicles</li>
-                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">⚠️</span> Aftermarket part quality varies</li>
+                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">~</span> $500–$1,500+ installed (parts + paint + labor)</li>
+                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">~</span> 1–3 days in the shop</li>
+                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">~</span> Paint match may not be perfect on older vehicles</li>
+                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">~</span> Aftermarket part quality varies</li>
               </ul>
             </div>
           </div>
           <div className="mt-6 bg-gold/10 border border-gold/30 rounded-xl p-6">
             <p className="text-dark-text font-medium">
-              💡 <strong>Bottom line:</strong> If your bumper damage qualifies for PDR, you can
+               <strong>Bottom line:</strong> If your bumper damage qualifies for PDR, you can
               save $300–$1,000+ vs. replacement. The inspection takes 15 minutes and tells you exactly
               where you stand.
             </p>

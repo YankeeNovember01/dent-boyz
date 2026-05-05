@@ -11,22 +11,22 @@ export const metadata: Metadata = {
 const differentiators = [
   {
     title: 'PDR Only',
-    icon: '🎯',
+    icon: '',
     body: "We don't do collision repair, body filler, or repainting. PDR is our craft. That focus makes us better at it.",
   },
   {
     title: 'Insurance Experts',
-    icon: '📋',
+    icon: '',
     body: "We've worked with every major Texas insurer — State Farm, USAA, Allstate, Progressive, Farmers, GEICO. We know the process cold and handle it for you.",
   },
   {
     title: 'Luxury Vehicle Specialists',
-    icon: '🏆',
+    icon: '',
     body: 'New BMWs, Teslas, Range Rovers, Porsches — we understand the stakes of preserving factory paint on a $60K+ vehicle. We treat them accordingly.',
   },
   {
     title: 'Mobile Service',
-    icon: '🚗',
+    icon: '',
     body: 'We come to you. Home, office, wherever works. North Dallas commuters shouldn\'t have to take a day off for a dent.',
   },
 ];
@@ -41,27 +41,27 @@ const serviceAreaCities = [
 
 const promises = [
   {
-    icon: '🔍',
+    icon: '',
     title: 'Honest Inspections',
     desc: 'We tell you what we see, not what maximizes our revenue.',
   },
   {
-    icon: '🎨',
+    icon: '',
     title: 'Factory Paint Preserved',
     desc: "If PDR won't work on your car, we'll say so before touching it.",
   },
   {
-    icon: '💬',
+    icon: '',
     title: 'Transparent Pricing',
     desc: 'No surprise charges, no pressure.',
   },
   {
-    icon: '🛡️',
+    icon: '',
     title: 'Lifetime Warranty',
     desc: 'Every PDR repair is covered for life — no questions asked.',
   },
   {
-    icon: '⭐',
+    icon: '',
     title: 'Your Satisfaction',
     desc: 'The only measure of a job done right.',
   },

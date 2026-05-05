@@ -136,20 +136,20 @@ export default function LargeDentRepairPage() {
               </p>
               <h3 className="font-bold text-dark-text mb-3">Strong PDR candidates:</h3>
               <ul className="space-y-2 text-gray-600 mb-6">
-                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">✅</span> Large, smooth dents on flat panels (hood, roof, doors)</li>
-                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">✅</span> Hail damage dents, even large ones</li>
-                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">✅</span> Push-in dents without cracked paint</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">YES</span> Large, smooth dents on flat panels (hood, roof, doors)</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">YES</span> Hail damage dents, even large ones</li>
+                <li className="flex items-start gap-2"><span className="text-green-500 font-bold">YES</span> Push-in dents without cracked paint</li>
               </ul>
               <h3 className="font-bold text-dark-text mb-3">Limitations:</h3>
               <ul className="space-y-2 text-gray-600">
-                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">⚠️</span> Dents directly on sharp body lines</li>
-                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">⚠️</span> Dents near panel edges where access is limited</li>
-                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">⚠️</span> Dents where the metal has been significantly stretched (thinned)</li>
-                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">⚠️</span> Any dent with cracked or broken paint</li>
+                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">~</span> Dents directly on sharp body lines</li>
+                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">~</span> Dents near panel edges where access is limited</li>
+                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">~</span> Dents where the metal has been significantly stretched (thinned)</li>
+                <li className="flex items-start gap-2"><span className="text-red-500 font-bold">~</span> Any dent with cracked or broken paint</li>
               </ul>
             </div>
             <div className="bg-navy text-white rounded-xl p-8 flex flex-col justify-center">
-              <div className="text-4xl mb-4">💬</div>
+              <div className="text-4xl mb-4"></div>
               <blockquote className="text-lg font-medium text-gray-200 italic mb-4">
                 &ldquo;We&apos;ve fixed dents that other shops said were impossible. Get an inspection first.&rdquo;
               </blockquote>
@@ -177,12 +177,12 @@ export default function LargeDentRepairPage() {
               </thead>
               <tbody>
                 {[
-                  ['Cost', '✅ Significantly lower', '❌ Filler + paint + labor = expensive'],
-                  ['Factory Paint', '✅ 100% preserved', '❌ Sanded, filled, and repainted'],
-                  ['Time', '✅ Same day to 2 days', '❌ 1–3 weeks typical'],
-                  ['Resale Value', '✅ No Carfax notation', '❌ Repaint shows on Carfax / inspection'],
-                  ['Result', '✅ Factory original', '⚠️ Close, but paint match varies'],
-                  ['Warranty', '✅ Lifetime PDR warranty', '⚠️ Shop-specific, usually 1 year'],
+                  ['Cost', 'YES Significantly lower', 'NO Filler + paint + labor = expensive'],
+                  ['Factory Paint', 'YES 100% preserved', 'NO Sanded, filled, and repainted'],
+                  ['Time', 'YES Same day to 2 days', 'NO 1–3 weeks typical'],
+                  ['Resale Value', 'YES No Carfax notation', 'NO Repaint shows on Carfax / inspection'],
+                  ['Result', 'YES Factory original', '~ Close, but paint match varies'],
+                  ['Warranty', 'YES Lifetime PDR warranty', '~ Shop-specific, usually 1 year'],
                 ].map(([factor, pdr, shop]) => (
                   <tr key={factor} className="border-b border-gray-100 hover:bg-gray-50">
                     <td className="py-3 px-6 font-medium text-dark-text">{factor}</td>

@@ -9,12 +9,12 @@ export const metadata: Metadata = {
 };
 
 const trustBadges = [
-  { icon: '🔍', label: 'Free Inspection', desc: 'No cost, no obligation' },
-  { icon: '📋', label: 'Insurance Handled', desc: 'We manage the entire claim' },
-  { icon: '💳', label: 'Deductible Assistance', desc: 'Ask us about your options' },
-  { icon: '🛡️', label: 'Lifetime Warranty', desc: 'Every repair guaranteed for life' },
-  { icon: '⚡', label: '1–3 Day Turnaround', desc: 'Most repairs done fast' },
-  { icon: '📱', label: 'Mobile Service', desc: 'We come to you' },
+  { icon: '', label: 'Free Inspection', desc: 'No cost, no obligation' },
+  { icon: '', label: 'Insurance Handled', desc: 'We manage the entire claim' },
+  { icon: '', label: 'Deductible Assistance', desc: 'Ask us about your options' },
+  { icon: '', label: 'Lifetime Warranty', desc: 'Every repair guaranteed for life' },
+  { icon: '', label: '1–3 Day Turnaround', desc: 'Most repairs done fast' },
+  { icon: '', label: 'Mobile Service', desc: 'We come to you' },
 ];
 
 const serviceSchema = {
@@ -51,13 +51,13 @@ export default function FreeEstimatePage() {
           </p>
           <div className="flex justify-center gap-3 flex-wrap">
             <span className="bg-gold/20 text-gold border border-gold/30 px-4 py-2 rounded-full text-sm font-medium">
-              ✓ 100% Free
+               100% Free
             </span>
             <span className="bg-gold/20 text-gold border border-gold/30 px-4 py-2 rounded-full text-sm font-medium">
-              ✓ No Obligation
+               No Obligation
             </span>
             <span className="bg-gold/20 text-gold border border-gold/30 px-4 py-2 rounded-full text-sm font-medium">
-              ✓ Mobile Service Available
+               Mobile Service Available
             </span>
           </div>
         </div>

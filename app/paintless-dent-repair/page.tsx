@@ -99,22 +99,22 @@ const serviceSchema = {
 };
 
 const dentTypes = [
-  { type: 'Hail damage (most sizes)', viable: '✅ Yes — ideal candidate' },
-  { type: 'Door dings', viable: '✅ Yes' },
-  { type: 'Creases (minor)', viable: '✅ Yes — with skill' },
-  { type: 'Creases (sharp/deep)', viable: '⚠️ Sometimes' },
-  { type: 'Large body panel dents', viable: '⚠️ Depends on location' },
-  { type: 'Dents where paint is chipped/cracked', viable: '❌ No — needs body shop' },
-  { type: 'Dents on body lines', viable: '⚠️ Requires specialist' },
-  { type: 'Rust damage', viable: '❌ No' },
+  { type: 'Hail damage (most sizes)', viable: 'YES Yes — ideal candidate' },
+  { type: 'Door dings', viable: 'YES Yes' },
+  { type: 'Creases (minor)', viable: 'YES Yes — with skill' },
+  { type: 'Creases (sharp/deep)', viable: '~ Sometimes' },
+  { type: 'Large body panel dents', viable: '~ Depends on location' },
+  { type: 'Dents where paint is chipped/cracked', viable: 'NO No — needs body shop' },
+  { type: 'Dents on body lines', viable: '~ Requires specialist' },
+  { type: 'Rust damage', viable: 'NO No' },
 ];
 
 const comparisonRows = [
-  { factor: 'Factory paint preserved', pdr: '✅ Always', shop: '❌ Repainted' },
+  { factor: 'Factory paint preserved', pdr: 'YES Always', shop: 'NO Repainted' },
   { factor: 'Resale value impact', pdr: 'Minimal', shop: 'Can reduce 10–20%' },
   { factor: 'Repair time', pdr: '1–5 days', shop: '1–3 weeks' },
   { factor: 'Cost', pdr: 'Lower', shop: 'Higher' },
-  { factor: 'Insurance preferred', pdr: '✅ Often', shop: '✅ Accepted' },
+  { factor: 'Insurance preferred', pdr: 'YES Often', shop: 'YES Accepted' },
   { factor: 'Paint match risk', pdr: 'None', shop: 'Color mismatch possible' },
 ];
 
@@ -366,22 +366,22 @@ export default function PaintlessDentRepairPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                icon: '🚗',
+                icon: '',
                 title: 'Cars, Trucks & SUVs',
                 desc: 'Any steel or aluminum panel. Sedans, pickups, crossovers, vans — if it has a body panel, we can work on it.',
               },
               {
-                icon: '💎',
+                icon: '',
                 title: 'Luxury Vehicles',
                 desc: 'BMW, Mercedes, Tesla, Porsche, Range Rover — preserving factory paint is especially critical on high-end vehicles where paint quality and resale value are paramount.',
               },
               {
-                icon: '🏍️',
+                icon: '',
                 title: 'Motorcycles & Powersports',
                 desc: 'Tanks, fairings, and body panels on motorcycles and recreational vehicles are PDR candidates when the paint is intact.',
               },
               {
-                icon: '📋',
+                icon: '',
                 title: 'Leased Vehicles',
                 desc: 'Fix damage before returning your lease to avoid dealer excess wear charges. PDR is the cleanest, most cost-effective solution.',
               },
@@ -417,22 +417,22 @@ export default function PaintlessDentRepairPage() {
           <div className="grid md:grid-cols-2 gap-6">
             {[
               {
-                icon: '📄',
+                icon: '',
                 title: 'Carfax-Style Reports Flag Repainted Panels',
                 desc: 'VIN-based vehicle history reports can detect repainted panels through paint thickness measurements. Buyers and dealers see this — and it signals damage history.',
               },
               {
-                icon: '💰',
+                icon: '',
                 title: 'Dealers and Buyers Know the Difference',
                 desc: 'A repainted panel reduces trade-in value and private sale value. Buyers negotiate harder. Dealers offer less. Factory paint commands a premium.',
               },
               {
-                icon: '🏗️',
+                icon: '',
                 title: 'Factory Paint = Original Structural Integrity',
                 desc: 'The OEM paint system is engineered to bond with the specific substrate of your vehicle. Body shop repaints use different formulations that may not provide the same protection or longevity.',
               },
               {
-                icon: '✅',
+                icon: 'YES',
                 title: 'PDR Preserves All of It',
                 desc: 'When Dent Boyz performs a PDR repair, the paint is never touched. No sanding, no primer, no color coat. The panel returns to factory shape with every layer of the original finish intact.',
               },
