@@ -21,7 +21,7 @@ const faqItems = [
   {
     question: 'How long does hail damage repair take?',
     answer:
-      'Most hail damage repairs at Dent Boyz are completed in 1–3 business days. Vehicles with severe damage — including large concentrations of deep dents, damage to moldings, or damage to glass — may take up to 5–7 days. We\'ll give you an accurate timeline during your free inspection. We also coordinate rental vehicles through your insurance claim if needed.',
+      'Once your vehicle is in our shop, most hail damage repairs are completed in 1–3 business days. Vehicles with severe damage — including large concentrations of deep dents, damage to moldings, or damage to glass — may take up to 5–7 days. Keep in mind the full process from filing your insurance claim to repair start typically takes 1–2 weeks (adjuster appointment + estimate approval). We\'ll give you an accurate timeline during your free inspection and coordinate rental vehicles through your insurance if needed.',
   },
   {
     question: 'Will my car look factory original after PDR?',
@@ -246,7 +246,7 @@ export default function HailDamageRepairPage() {
             {[
               { step: '01', title: 'Free Inspection', desc: 'We come to you or you bring your vehicle to us. Our technicians perform a full damage assessment using specialized lighting, documenting every dent with photos and measurements. This takes 30–45 minutes and is completely free with no obligation.' },
               { step: '02', title: 'Insurance Coordination', desc: 'We prepare your complete damage documentation and work with your insurance adjuster to ensure you receive the full compensation you\'re entitled to. We handle all the paperwork, phone calls, and supplemental claims if needed. You focus on your day — we handle the insurance.' },
-              { step: '03', title: 'Expert PDR Repair', desc: 'Our certified technicians get to work. Using specialized PDR tools and specialized lighting boards to reveal every dent, we systematically massage each dent back to factory shape. Most vehicles are completed in 1–3 business days. We\'ll keep you updated throughout the process.' },
+              { step: '03', title: 'Expert PDR Repair', desc: 'Our certified technicians get to work. Using specialized PDR tools and specialized lighting boards to reveal every dent, we systematically massage each dent back to factory shape. Once your vehicle is in the shop, most repairs are completed in 1–3 business days. We\'ll keep you updated throughout the process.' },
               { step: '04', title: 'Final Inspection & Delivery', desc: 'Before we return your vehicle, we perform a rigorous final inspection under multiple lighting conditions — including specialized LED lighting boards that reveal any remaining imperfections. We don\'t deliver until the car meets our standards. Your insurance is billed directly — you pay only your deductible (or nothing with deductible assistance).' },
             ].map((item) => (
               <div key={item.step} className="bg-light-gray rounded-xl p-8 border-l-4 border-gold">

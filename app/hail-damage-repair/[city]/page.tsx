@@ -29,7 +29,7 @@ function buildCityFAQ(city: ReturnType<typeof getCityBySlug>) {
   return [
     {
       question: `How quickly can Dent Boyz respond to hail damage in ${city.name}, TX?`,
-      answer: `We typically schedule free inspections in ${city.name} within 1–2 business days of your call. After filing your insurance claim, repair turnaround is usually 1–3 business days for most hail events. We also offer mobile service — our technicians can come to your home in ${city.neighborhoods} or your office for the inspection.`,
+      answer: `We typically schedule free inspections in ${city.name} within 1–2 business days of your call. The full insurance process (adjuster + estimate approval) takes about 1–2 weeks. Once your vehicle is in our shop, most repairs take 1–3 business days. We also offer mobile service — our technicians can come to your home in ${city.neighborhoods} or your office for the inspection.`,
     },
     {
       question: `Does Dent Boyz offer mobile PDR service in ${city.name}?`,
@@ -186,7 +186,7 @@ export default function CityPage({ params }: Props) {
               <p className="text-gray-600 leading-relaxed">
                 The good news: <strong>Dent Boyz is here to help</strong>. We offer free mobile
                 inspections throughout {city.name}, work with all major insurance companies, and can
-                restore most vehicles to factory condition in 1–3 business days.
+                restore most vehicles to factory condition in 1–3 business days once in the shop.
               </p>
             </div>
             <div className="rounded-xl overflow-hidden shadow-md">
@@ -234,7 +234,7 @@ export default function CityPage({ params }: Props) {
               {
                 icon: '',
                 title: '1–3 Day Turnaround',
-                desc: `Most ${city.name} hail damage repairs are completed in 1–3 business days. We know you need your vehicle — we work efficiently without cutting corners.`,
+                desc: `Most ${city.name} hail damage repairs are completed in 1–3 business days once your vehicle is in our shop. We know you need your vehicle — we work efficiently without cutting corners.`,
               },
               {
                 icon: '',
