@@ -119,33 +119,14 @@ export default function HomePage() {
               animation: 'slideInRight 0.7s cubic-bezier(0.22,1,0.36,1) both',
             }}
           >
-            <div style={{
-              position: 'relative',
-              display: 'inline-block',
-            }}>
-              <Image
-                src="/images/logo.png"
-                alt="Dent Boyz PDR — North Dallas Hail Damage Repair"
-                width={340}
-                height={340}
-                className="w-48 md:w-64 lg:w-80 h-auto"
-                priority
-              />
-              {/* Radial fade overlay — blends white box edges into navy */}
-              <div style={{
-                position: 'absolute',
-                inset: '-10px',
-                background: 'radial-gradient(ellipse at center, transparent 50%, rgba(10,22,40,0.4) 68%, #0A1628 82%)',
-                pointerEvents: 'none',
-              }} />
-              {/* Extra edge kill */}
-              <div style={{
-                position: 'absolute',
-                inset: 0,
-                boxShadow: 'inset 0 0 40px 20px #0A1628',
-                pointerEvents: 'none',
-              }} />
-            </div>
+            <Image
+              src="/images/logo.png"
+              alt="Dent Boyz PDR — North Dallas Hail Damage Repair"
+              width={340}
+              height={340}
+              className="w-48 md:w-64 lg:w-80 h-auto"
+              priority
+            />
           </div>
           <div className="max-w-3xl">
             <div className="w-12 h-0.5 bg-gold mb-8"></div>
