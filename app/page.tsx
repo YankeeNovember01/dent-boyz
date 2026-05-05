@@ -125,6 +125,7 @@ export default function HomePage() {
               width={340}
               height={340}
               className="w-48 md:w-64 lg:w-80 h-auto"
+              style={{ mixBlendMode: 'luminosity' }}
               priority
             />
           </div>
